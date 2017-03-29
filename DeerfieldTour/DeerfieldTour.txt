@@ -1,0 +1,7 @@
+Components:
+-gps that tracks where your at
+-compass where you are facing
+-optimal route
+-tour guide voice or text
+-pictures to aid as guides
+-

@@ -13,6 +13,7 @@
 		169577FF1E8A975F00EAC913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169577FD1E8A975F00EAC913 /* Main.storyboard */; };
 		169578011E8A975F00EAC913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169578001E8A975F00EAC913 /* Assets.xcassets */; };
 		169578041E8A975F00EAC913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169578021E8A975F00EAC913 /* LaunchScreen.storyboard */; };
+		1695780C1E8BDFD300EAC913 /* overlayBoundaries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1695780B1E8BDFD300EAC913 /* overlayBoundaries.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		169578001E8A975F00EAC913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169578031E8A975F00EAC913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169578051E8A975F00EAC913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1695780B1E8BDFD300EAC913 /* overlayBoundaries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = overlayBoundaries.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				169578001E8A975F00EAC913 /* Assets.xcassets */,
 				169578021E8A975F00EAC913 /* LaunchScreen.storyboard */,
 				169578051E8A975F00EAC913 /* Info.plist */,
+				1695780B1E8BDFD300EAC913 /* overlayBoundaries.plist */,
 				169577F41E8A975F00EAC913 /* Supporting Files */,
 			);
 			path = DeerfieldTour;
@@ -140,6 +143,7 @@
 				169578041E8A975F00EAC913 /* LaunchScreen.storyboard in Resources */,
 				169578011E8A975F00EAC913 /* Assets.xcassets in Resources */,
 				169577FF1E8A975F00EAC913 /* Main.storyboard in Resources */,
+				1695780C1E8BDFD300EAC913 /* overlayBoundaries.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
