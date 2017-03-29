@@ -20,6 +20,8 @@
 		07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2E1DE167988AA00355A96 /* CoreLocation.framework */; };
 		07A98C031663F4E400D49A7A /* PVParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A98C021663F4E400D49A7A /* PVParkMapViewController.m */; };
 		281642991E8BE1A400326A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281642981E8BE1A400326A99 /* LaunchScreen.storyboard */; };
+		2816429B1E8BE3BD00326A99 /* building_coordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2816429A1E8BE3BD00326A99 /* building_coordinates.plist */; };
+		2816429D1E8BE54B00326A99 /* boundaries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2816429C1E8BE54B00326A99 /* boundaries.plist */; };
 		D3CE500D195317350032F059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE500C195317350032F059 /* MapKit.framework */; };
 		D3D60AD719531B1100BED91B /* PVPark.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AD619531B1100BED91B /* PVPark.m */; };
 		D3D60ADA19531EB800BED91B /* PVParkMapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AD919531EB800BED91B /* PVParkMapOverlay.m */; };
@@ -74,6 +76,8 @@
 		07A98C011663F4E400D49A7A /* PVParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVParkMapViewController.h; sourceTree = "<group>"; };
 		07A98C021663F4E400D49A7A /* PVParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVParkMapViewController.m; sourceTree = "<group>"; };
 		281642981E8BE1A400326A99 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2816429A1E8BE3BD00326A99 /* building_coordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = building_coordinates.plist; sourceTree = "<group>"; };
+		2816429C1E8BE54B00326A99 /* boundaries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = boundaries.plist; sourceTree = "<group>"; };
 		D3CE500C195317350032F059 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D3D60AD519531B1100BED91B /* PVPark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPark.h; sourceTree = "<group>"; };
 		D3D60AD619531B1100BED91B /* PVPark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPark.m; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				076BEE5E167EC67200ACF08A /* PVMapOptionsViewController.m */,
 				07866AC1165EE2B400D7BB3A /* PVAppDelegate.h */,
 				07866AC2165EE2B400D7BB3A /* PVAppDelegate.m */,
+				2816429A1E8BE3BD00326A99 /* building_coordinates.plist */,
+				2816429C1E8BE54B00326A99 /* boundaries.plist */,
 				07866AB9165EE2B400D7BB3A /* Supporting Files */,
 			);
 			path = "Park View";
@@ -354,9 +360,11 @@
 				D3D60B0619532D7500BED91B /* TazLocations.plist in Resources */,
 				D3D60AFB1953285C00BED91B /* star.png in Resources */,
 				D3D60AE01953211900BED91B /* overlay_park.png in Resources */,
+				2816429D1E8BE54B00326A99 /* boundaries.plist in Resources */,
 				D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */,
 				D3D60AF91953285C00BED91B /* ride.png in Resources */,
 				D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */,
+				2816429B1E8BE3BD00326A99 /* building_coordinates.plist in Resources */,
 				D3D60AF51953285C00BED91B /* firstaid.png in Resources */,
 				D3D60AF71953285C00BED91B /* food.png in Resources */,
 				D3D60AEB1953281800BED91B /* MagicMountain.plist in Resources */,
