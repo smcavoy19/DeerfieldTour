@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Koch_Center</key>
+	<dict>
+		<key>latitude</key>
+		<real>42.546864</real>
+		<key>longitude</key>
+		<real>-72.607722</real>
+	</dict>
+	<key>Library</key>
+	<dict>
+		<key>latitude</key>
+		<real>42.546777</real>
+		<key>longitude</key>
+		<real>-72.60684000000001</real>
+	</dict>
+	<key>Hess</key>
+	<dict>
+		<key>latitude</key>
+		<real>42.546472</real>
+		<key>longitude</key>
+		<real>-72.605948</real>
+	</dict>
+	<key>New item</key>
+	<string></string>
+</dict>
+</plist>
