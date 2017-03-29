@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076BEE5F167EC67300ACF08A /* PVMapOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076BEE5E167EC67200ACF08A /* PVMapOptionsViewController.m */; };
+		07866AB3165EE2B400D7BB3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07866AB2165EE2B400D7BB3A /* UIKit.framework */; };
+		07866AB5165EE2B400D7BB3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07866AB4165EE2B400D7BB3A /* Foundation.framework */; };
+		07866AB7165EE2B400D7BB3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07866AB6165EE2B400D7BB3A /* CoreGraphics.framework */; };
+		07866ABD165EE2B400D7BB3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07866ABB165EE2B400D7BB3A /* InfoPlist.strings */; };
+		07866ABF165EE2B400D7BB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07866ABE165EE2B400D7BB3A /* main.m */; };
+		07866AC3165EE2B400D7BB3A /* PVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07866AC2165EE2B400D7BB3A /* PVAppDelegate.m */; };
+		07866ACC165EE2B400D7BB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07866ACA165EE2B400D7BB3A /* Main.storyboard */; };
+		07866ADB165EE2B400D7BB3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07866AB2165EE2B400D7BB3A /* UIKit.framework */; };
+		07866ADC165EE2B400D7BB3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07866AB4165EE2B400D7BB3A /* Foundation.framework */; };
+		07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2E1DE167988AA00355A96 /* CoreLocation.framework */; };
+		07A98C031663F4E400D49A7A /* PVParkMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A98C021663F4E400D49A7A /* PVParkMapViewController.m */; };
+		281642991E8BE1A400326A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281642981E8BE1A400326A99 /* LaunchScreen.storyboard */; };
+		D3CE500D195317350032F059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE500C195317350032F059 /* MapKit.framework */; };
+		D3D60AD719531B1100BED91B /* PVPark.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AD619531B1100BED91B /* PVPark.m */; };
+		D3D60ADA19531EB800BED91B /* PVParkMapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AD919531EB800BED91B /* PVParkMapOverlay.m */; };
+		D3D60ADD19531EE800BED91B /* PVParkMapOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60ADC19531EE800BED91B /* PVParkMapOverlayView.m */; };
+		D3D60AE01953211900BED91B /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60ADE1953211900BED91B /* overlay_park.png */; };
+		D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60ADF1953211900BED91B /* overlay_park@2x.png */; };
+		D3D60AE41953274900BED91B /* PVAttractionAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AE31953274900BED91B /* PVAttractionAnnotation.m */; };
+		D3D60AEB1953281800BED91B /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AE91953281800BED91B /* MagicMountain.plist */; };
+		D3D60AEC1953281800BED91B /* MagicMountainAttractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AEA1953281800BED91B /* MagicMountainAttractions.plist */; };
+		D3D60AF51953285C00BED91B /* firstaid.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AED1953285C00BED91B /* firstaid.png */; };
+		D3D60AF61953285C00BED91B /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AEE1953285C00BED91B /* firstaid@2x.png */; };
+		D3D60AF71953285C00BED91B /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AEF1953285C00BED91B /* food.png */; };
+		D3D60AF81953285C00BED91B /* food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF01953285C00BED91B /* food@2x.png */; };
+		D3D60AF91953285C00BED91B /* ride.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF11953285C00BED91B /* ride.png */; };
+		D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF21953285C00BED91B /* ride@2x.png */; };
+		D3D60AFB1953285C00BED91B /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF31953285C00BED91B /* star.png */; };
+		D3D60AFC1953285C00BED91B /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF41953285C00BED91B /* star@2x.png */; };
+		D3D60AFF195328E900BED91B /* PVAttractionAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60AFE195328E900BED91B /* PVAttractionAnnotationView.m */; };
+		D3D60B0119532B0B00BED91B /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60B0019532B0B00BED91B /* EntranceToGoliathRoute.plist */; };
+		D3D60B0519532D7500BED91B /* BatmanLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60B0219532D7500BED91B /* BatmanLocations.plist */; };
+		D3D60B0619532D7500BED91B /* TazLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60B0319532D7500BED91B /* TazLocations.plist */; };
+		D3D60B0719532D7500BED91B /* TweetyBirdLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D60B0419532D7500BED91B /* TweetyBirdLocations.plist */; };
+		D3D60B0A19532D9400BED91B /* PVCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D60B0919532D9400BED91B /* PVCharacter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07866ADD165EE2B400D7BB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07866AA5165EE2B400D7BB3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07866AAD165EE2B400D7BB3A;
+			remoteInfo = "Park View";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076BEE5D167EC67100ACF08A /* PVMapOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVMapOptionsViewController.h; sourceTree = "<group>"; };
+		076BEE5E167EC67200ACF08A /* PVMapOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVMapOptionsViewController.m; sourceTree = "<group>"; };
+		07866AAE165EE2B400D7BB3A /* Map_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07866AB2165EE2B400D7BB3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07866AB4165EE2B400D7BB3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07866AB6165EE2B400D7BB3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07866ABA165EE2B400D7BB3A /* Map_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Map_test-Info.plist"; sourceTree = "<group>"; };
+		07866ABC165EE2B400D7BB3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07866ABE165EE2B400D7BB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07866AC0165EE2B400D7BB3A /* Map_test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Map_test-Prefix.pch"; sourceTree = "<group>"; };
+		07866AC1165EE2B400D7BB3A /* PVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVAppDelegate.h; sourceTree = "<group>"; };
+		07866AC2165EE2B400D7BB3A /* PVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVAppDelegate.m; sourceTree = "<group>"; };
+		07866ACB165EE2B400D7BB3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07866AD8165EE2B400D7BB3A /* Map_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Map_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A2E1DE167988AA00355A96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07A98C011663F4E400D49A7A /* PVParkMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVParkMapViewController.h; sourceTree = "<group>"; };
+		07A98C021663F4E400D49A7A /* PVParkMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVParkMapViewController.m; sourceTree = "<group>"; };
+		281642981E8BE1A400326A99 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3CE500C195317350032F059 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D3D60AD519531B1100BED91B /* PVPark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPark.h; sourceTree = "<group>"; };
+		D3D60AD619531B1100BED91B /* PVPark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPark.m; sourceTree = "<group>"; };
+		D3D60AD819531EB800BED91B /* PVParkMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVParkMapOverlay.h; sourceTree = "<group>"; };
+		D3D60AD919531EB800BED91B /* PVParkMapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVParkMapOverlay.m; sourceTree = "<group>"; };
+		D3D60ADB19531EE800BED91B /* PVParkMapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVParkMapOverlayView.h; sourceTree = "<group>"; };
+		D3D60ADC19531EE800BED91B /* PVParkMapOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVParkMapOverlayView.m; sourceTree = "<group>"; };
+		D3D60ADE1953211900BED91B /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
+		D3D60ADF1953211900BED91B /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
+		D3D60AE21953274900BED91B /* PVAttractionAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAttractionAnnotation.h; sourceTree = "<group>"; };
+		D3D60AE31953274900BED91B /* PVAttractionAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAttractionAnnotation.m; sourceTree = "<group>"; };
+		D3D60AE91953281800BED91B /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
+		D3D60AEA1953281800BED91B /* MagicMountainAttractions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountainAttractions.plist; sourceTree = "<group>"; };
+		D3D60AED1953285C00BED91B /* firstaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstaid.png; sourceTree = "<group>"; };
+		D3D60AEE1953285C00BED91B /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstaid@2x.png"; sourceTree = "<group>"; };
+		D3D60AEF1953285C00BED91B /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		D3D60AF01953285C00BED91B /* food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food@2x.png"; sourceTree = "<group>"; };
+		D3D60AF11953285C00BED91B /* ride.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ride.png; sourceTree = "<group>"; };
+		D3D60AF21953285C00BED91B /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x.png"; sourceTree = "<group>"; };
+		D3D60AF31953285C00BED91B /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		D3D60AF41953285C00BED91B /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		D3D60AFD195328E900BED91B /* PVAttractionAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAttractionAnnotationView.h; sourceTree = "<group>"; };
+		D3D60AFE195328E900BED91B /* PVAttractionAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAttractionAnnotationView.m; sourceTree = "<group>"; };
+		D3D60B0019532B0B00BED91B /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
+		D3D60B0219532D7500BED91B /* BatmanLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BatmanLocations.plist; sourceTree = "<group>"; };
+		D3D60B0319532D7500BED91B /* TazLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TazLocations.plist; sourceTree = "<group>"; };
+		D3D60B0419532D7500BED91B /* TweetyBirdLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TweetyBirdLocations.plist; sourceTree = "<group>"; };
+		D3D60B0819532D9400BED91B /* PVCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVCharacter.h; sourceTree = "<group>"; };
+		D3D60B0919532D9400BED91B /* PVCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVCharacter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07866AAB165EE2B400D7BB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CE500D195317350032F059 /* MapKit.framework in Frameworks */,
+				07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */,
+				07866AB3165EE2B400D7BB3A /* UIKit.framework in Frameworks */,
+				07866AB5165EE2B400D7BB3A /* Foundation.framework in Frameworks */,
+				07866AB7165EE2B400D7BB3A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07866AD4165EE2B400D7BB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07866ADB165EE2B400D7BB3A /* UIKit.framework in Frameworks */,
+				07866ADC165EE2B400D7BB3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		076BF08D1680457B00ACF08A /* Park Information */ = {
+			isa = PBXGroup;
+			children = (
+				D3D60B0219532D7500BED91B /* BatmanLocations.plist */,
+				D3D60B0319532D7500BED91B /* TazLocations.plist */,
+				D3D60B0419532D7500BED91B /* TweetyBirdLocations.plist */,
+				D3D60B0019532B0B00BED91B /* EntranceToGoliathRoute.plist */,
+				D3D60AE91953281800BED91B /* MagicMountain.plist */,
+				D3D60AEA1953281800BED91B /* MagicMountainAttractions.plist */,
+			);
+			name = "Park Information";
+			sourceTree = "<group>";
+		};
+		076BF08F1680459100ACF08A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3D60AED1953285C00BED91B /* firstaid.png */,
+				D3D60AEE1953285C00BED91B /* firstaid@2x.png */,
+				D3D60AEF1953285C00BED91B /* food.png */,
+				D3D60AF01953285C00BED91B /* food@2x.png */,
+				D3D60AF11953285C00BED91B /* ride.png */,
+				D3D60AF21953285C00BED91B /* ride@2x.png */,
+				D3D60AF31953285C00BED91B /* star.png */,
+				D3D60AF41953285C00BED91B /* star@2x.png */,
+				D3D60ADE1953211900BED91B /* overlay_park.png */,
+				D3D60ADF1953211900BED91B /* overlay_park@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		076BF0901680459E00ACF08A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3D60AD519531B1100BED91B /* PVPark.h */,
+				D3D60AD619531B1100BED91B /* PVPark.m */,
+				D3D60B0819532D9400BED91B /* PVCharacter.h */,
+				D3D60B0919532D9400BED91B /* PVCharacter.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		076BF091168045BF00ACF08A /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				D3D60AE21953274900BED91B /* PVAttractionAnnotation.h */,
+				D3D60AE31953274900BED91B /* PVAttractionAnnotation.m */,
+				D3D60AFD195328E900BED91B /* PVAttractionAnnotationView.h */,
+				D3D60AFE195328E900BED91B /* PVAttractionAnnotationView.m */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		076BF092168045C900ACF08A /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				D3D60AD819531EB800BED91B /* PVParkMapOverlay.h */,
+				D3D60AD919531EB800BED91B /* PVParkMapOverlay.m */,
+				D3D60ADB19531EE800BED91B /* PVParkMapOverlayView.h */,
+				D3D60ADC19531EE800BED91B /* PVParkMapOverlayView.m */,
+			);
+			name = Overlays;
+			sourceTree = "<group>";
+		};
+		076BF093168045DE00ACF08A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07866ACA165EE2B400D7BB3A /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		07866AA3165EE2B400D7BB3A = {
+			isa = PBXGroup;
+			children = (
+				07866AB8165EE2B400D7BB3A /* Park View */,
+				07866AB1165EE2B400D7BB3A /* Frameworks */,
+				07866AAF165EE2B400D7BB3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07866AAF165EE2B400D7BB3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07866AAE165EE2B400D7BB3A /* Map_test.app */,
+				07866AD8165EE2B400D7BB3A /* Map_testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07866AB1165EE2B400D7BB3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE500C195317350032F059 /* MapKit.framework */,
+				07A2E1DE167988AA00355A96 /* CoreLocation.framework */,
+				07866AB2165EE2B400D7BB3A /* UIKit.framework */,
+				07866AB4165EE2B400D7BB3A /* Foundation.framework */,
+				07866AB6165EE2B400D7BB3A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07866AB8165EE2B400D7BB3A /* Park View */ = {
+			isa = PBXGroup;
+			children = (
+				076BF08F1680459100ACF08A /* Images */,
+				076BF08D1680457B00ACF08A /* Park Information */,
+				076BF0901680459E00ACF08A /* Models */,
+				076BF092168045C900ACF08A /* Overlays */,
+				076BF091168045BF00ACF08A /* Annotations */,
+				076BF093168045DE00ACF08A /* Storyboards */,
+				07A98C011663F4E400D49A7A /* PVParkMapViewController.h */,
+				07A98C021663F4E400D49A7A /* PVParkMapViewController.m */,
+				076BEE5D167EC67100ACF08A /* PVMapOptionsViewController.h */,
+				076BEE5E167EC67200ACF08A /* PVMapOptionsViewController.m */,
+				07866AC1165EE2B400D7BB3A /* PVAppDelegate.h */,
+				07866AC2165EE2B400D7BB3A /* PVAppDelegate.m */,
+				07866AB9165EE2B400D7BB3A /* Supporting Files */,
+			);
+			path = "Park View";
+			sourceTree = "<group>";
+		};
+		07866AB9165EE2B400D7BB3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				281642981E8BE1A400326A99 /* LaunchScreen.storyboard */,
+				07866ABA165EE2B400D7BB3A /* Map_test-Info.plist */,
+				07866ABB165EE2B400D7BB3A /* InfoPlist.strings */,
+				07866ABE165EE2B400D7BB3A /* main.m */,
+				07866AC0165EE2B400D7BB3A /* Map_test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07866AAD165EE2B400D7BB3A /* Map_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Map_test" */;
+			buildPhases = (
+				07866AAA165EE2B400D7BB3A /* Sources */,
+				07866AAB165EE2B400D7BB3A /* Frameworks */,
+				07866AAC165EE2B400D7BB3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Map_test;
+			productName = "Park View";
+			productReference = 07866AAE165EE2B400D7BB3A /* Map_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07866AD7165EE2B400D7BB3A /* Map_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07866AED165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Map_testTests" */;
+			buildPhases = (
+				07866AD3165EE2B400D7BB3A /* Sources */,
+				07866AD4165EE2B400D7BB3A /* Frameworks */,
+				07866AD5165EE2B400D7BB3A /* Resources */,
+				07866AD6165EE2B400D7BB3A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07866ADE165EE2B400D7BB3A /* PBXTargetDependency */,
+			);
+			name = Map_testTests;
+			productName = "Park ViewTests";
+			productReference = 07866AD8165EE2B400D7BB3A /* Map_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07866AA5165EE2B400D7BB3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PV;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Neil & Sean";
+				TargetAttributes = {
+					07866AAD165EE2B400D7BB3A = {
+						DevelopmentTeam = 8NZ8K5GNH8;
+					};
+				};
+			};
+			buildConfigurationList = 07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Map_test" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07866AA3165EE2B400D7BB3A;
+			productRefGroup = 07866AAF165EE2B400D7BB3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07866AAD165EE2B400D7BB3A /* Map_test */,
+				07866AD7165EE2B400D7BB3A /* Map_testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07866AAC165EE2B400D7BB3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07866ABD165EE2B400D7BB3A /* InfoPlist.strings in Resources */,
+				D3D60B0519532D7500BED91B /* BatmanLocations.plist in Resources */,
+				D3D60AF61953285C00BED91B /* firstaid@2x.png in Resources */,
+				D3D60B0719532D7500BED91B /* TweetyBirdLocations.plist in Resources */,
+				D3D60AEC1953281800BED91B /* MagicMountainAttractions.plist in Resources */,
+				D3D60AFC1953285C00BED91B /* star@2x.png in Resources */,
+				281642991E8BE1A400326A99 /* LaunchScreen.storyboard in Resources */,
+				07866ACC165EE2B400D7BB3A /* Main.storyboard in Resources */,
+				D3D60AF81953285C00BED91B /* food@2x.png in Resources */,
+				D3D60B0119532B0B00BED91B /* EntranceToGoliathRoute.plist in Resources */,
+				D3D60B0619532D7500BED91B /* TazLocations.plist in Resources */,
+				D3D60AFB1953285C00BED91B /* star.png in Resources */,
+				D3D60AE01953211900BED91B /* overlay_park.png in Resources */,
+				D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */,
+				D3D60AF91953285C00BED91B /* ride.png in Resources */,
+				D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */,
+				D3D60AF51953285C00BED91B /* firstaid.png in Resources */,
+				D3D60AF71953285C00BED91B /* food.png in Resources */,
+				D3D60AEB1953281800BED91B /* MagicMountain.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07866AD5165EE2B400D7BB3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07866AD6165EE2B400D7BB3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07866AAA165EE2B400D7BB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07866ABF165EE2B400D7BB3A /* main.m in Sources */,
+				D3D60ADD19531EE800BED91B /* PVParkMapOverlayView.m in Sources */,
+				D3D60AD719531B1100BED91B /* PVPark.m in Sources */,
+				07866AC3165EE2B400D7BB3A /* PVAppDelegate.m in Sources */,
+				07A98C031663F4E400D49A7A /* PVParkMapViewController.m in Sources */,
+				D3D60B0A19532D9400BED91B /* PVCharacter.m in Sources */,
+				D3D60AE41953274900BED91B /* PVAttractionAnnotation.m in Sources */,
+				D3D60AFF195328E900BED91B /* PVAttractionAnnotationView.m in Sources */,
+				076BEE5F167EC67300ACF08A /* PVMapOptionsViewController.m in Sources */,
+				D3D60ADA19531EB800BED91B /* PVParkMapOverlay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07866AD3165EE2B400D7BB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07866ADE165EE2B400D7BB3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07866AAD165EE2B400D7BB3A /* Map_test */;
+			targetProxy = 07866ADD165EE2B400D7BB3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07866ABB165EE2B400D7BB3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07866ABC165EE2B400D7BB3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07866ACA165EE2B400D7BB3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07866ACB165EE2B400D7BB3A /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07866AE8165EE2B400D7BB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07866AE9165EE2B400D7BB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07866AEB165EE2B400D7BB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Park View/Map_test-Prefix.pch";
+				INFOPLIST_FILE = "Park View/Map_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongyang.map-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07866AEC165EE2B400D7BB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Park View/Map_test-Prefix.pch";
+				INFOPLIST_FILE = "Park View/Map_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongyang.map-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07866AEE165EE2B400D7BB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Park View.app/Park View";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Park View/Park View-Prefix.pch";
+				INFOPLIST_FILE = "Park ViewTests/Park ViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		07866AEF165EE2B400D7BB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Park View.app/Park View";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Park View/Park View-Prefix.pch";
+				INFOPLIST_FILE = "Park ViewTests/Park ViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Map_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07866AE8165EE2B400D7BB3A /* Debug */,
+				07866AE9165EE2B400D7BB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Map_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07866AEB165EE2B400D7BB3A /* Debug */,
+				07866AEC165EE2B400D7BB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07866AED165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Map_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07866AEE165EE2B400D7BB3A /* Debug */,
+				07866AEF165EE2B400D7BB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07866AA5165EE2B400D7BB3A /* Project object */;
+}
