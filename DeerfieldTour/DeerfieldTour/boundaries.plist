@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bottom_right</key>
+	<string>{42.543774, -72.605345}</string>
+	<key>bottom_left</key>
+	<string>{42.544551, -72.610924} </string>
+	<key>top_right</key>
+	<string>{42.546013, -72.60420}</string>
+	<key>top_left</key>
+	<string>{42.547682, -72.610008}</string>
+	<key>mid</key>
+	<string>{42.545840, -72.607769}</string>
+</dict>
+</plist>

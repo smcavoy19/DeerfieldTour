@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+#import "MapOverlay.h"
+#import "MapOverlayView.h"
+#import "Campus.h"
 
+@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate>
+
+@property (strong, nonatomic) Campus *campus;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
