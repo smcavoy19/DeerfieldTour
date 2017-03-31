@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <CoreLocation/CoreLocation.h>
+#
 @interface ViewController ()
 
 @end
@@ -52,7 +53,6 @@
     [self.mapView addOverlay:overlay];
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically fro
 }
 
 
