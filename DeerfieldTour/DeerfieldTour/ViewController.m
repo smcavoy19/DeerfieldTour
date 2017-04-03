@@ -15,6 +15,46 @@
 
 @implementation ViewController
 
+#pragma mark - IBActions
+
+- (IBAction)mapTypeChanged:(id)sender {
+    switch (self.mapTypeSegmentedControl.selectedSegmentIndex) {
+        case 0:
+            self.mapView.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            self.mapView.mapType = MKMapTypeHybrid;
+            break;
+        case 2:
+            self.mapView.mapType = MKMapTypeSatellite;
+            break;
+        default:
+            break;
+    }
+}
+
+- (IBAction)showMenu:(id)sender {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.2 animations:^{
+            self.menuHeight.constant = 55;
+            self.menuView.alpha = 1.0;
+            [self.view layoutIfNeeded];
+        }];
+    });
+}
+
+- (IBAction)closeMenu:(id)sender {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.2 animations:^{
+            self.menuHeight.constant = -30;
+            self.menuView.alpha = 0.0;
+            [self.view layoutIfNeeded];
+        }];
+    });
+}
+
 #pragma mark - Map View delegate
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
@@ -32,6 +72,8 @@
     
     return nil;
 }
+
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     
