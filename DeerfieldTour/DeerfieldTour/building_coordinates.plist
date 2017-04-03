@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Koch_Center</key>
+<array>
 	<dict>
-		<key>latitude</key>
-		<real>42.546864</real>
-		<key>longitude</key>
-		<real>-72.607722</real>
+		<key>title</key>
+		<string>Hess Center for the Arts</string>
+		<key>location</key>
+		<string>{42.546472, -72.605948}</string>
 	</dict>
-	<key>Library</key>
 	<dict>
-		<key>latitude</key>
-		<real>42.546777</real>
-		<key>longitude</key>
-		<real>-72.60684000000001</real>
+		<key>title</key>
+		<string>The Boyden Library</string>
+		<key>location</key>
+		<string>{42.546777, -72.60684}</string>
 	</dict>
-	<key>Hess</key>
 	<dict>
-		<key>latitude</key>
-		<real>42.546472</real>
-		<key>longitude</key>
-		<real>-72.605948</real>
+		<key>location</key>
+		<string>{42.546864, -72.607722}</string>
+		<key>title</key>
+		<string>The Kock Center</string>
 	</dict>
-	<key>New item</key>
-	<string></string>
-</dict>
+</array>
 </plist>

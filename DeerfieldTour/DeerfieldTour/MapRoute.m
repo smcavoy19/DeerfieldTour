@@ -11,6 +11,15 @@
 
 @implementation MapRoute
 
+-(instancetype)initWithFilename:(NSString *)filename{
+    
+    self = [super init];
+    if (self) {
+    
+    }
+    return self;
+}
+
 - (MKPolyline*)addRoute {
     NSString *thePath = [[NSBundle mainBundle] pathForResource:@"route_points" ofType:@"plist"];
     NSArray *pointsArray = [NSArray arrayWithContentsOfFile:thePath];

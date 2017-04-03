@@ -13,6 +13,8 @@
 #import "MapOverlay.h"
 #import "MapOverlayView.h"
 #import "Campus.h"
+#import "BuildingAnnotation.h"
+#import "BuildingAnnotationView.h"
 
 @interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate>
 

@@ -29,6 +29,9 @@
 		28233D541E8E86C90060BAD9 /* campus.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D531E8E86C90060BAD9 /* campus.png */; };
 		287D6AC41E8DE65F00A42BE4 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 287D6AC31E8DE65F00A42BE4 /* map.png */; };
 		28CB15E21E8CB21400513304 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB15E11E8CB21400513304 /* Campus.m */; };
+		28F076F61E92745700B7B7B4 /* BuildingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F076F51E92745700B7B7B4 /* BuildingAnnotation.m */; };
+		28F076F91E92750A00B7B7B4 /* BuildingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F076F81E92750A00B7B7B4 /* BuildingAnnotationView.m */; };
+		28F076FB1E92754A00B7B7B4 /* Map-Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F076FA1E92754A00B7B7B4 /* Map-Pin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,11 @@
 		287D6AC31E8DE65F00A42BE4 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		28CB15E01E8CB21400513304 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		28CB15E11E8CB21400513304 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		28F076F41E92745700B7B7B4 /* BuildingAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingAnnotation.h; sourceTree = "<group>"; };
+		28F076F51E92745700B7B7B4 /* BuildingAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingAnnotation.m; sourceTree = "<group>"; };
+		28F076F71E92750A00B7B7B4 /* BuildingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingAnnotationView.h; sourceTree = "<group>"; };
+		28F076F81E92750A00B7B7B4 /* BuildingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingAnnotationView.m; sourceTree = "<group>"; };
+		28F076FA1E92754A00B7B7B4 /* Map-Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map-Pin.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				161C81A61E8E8633008F9AE2 /* MapRoute */,
-				282049711E8BE85F007F6719 /* MapOverlay */,
+				282049711E8BE85F007F6719 /* Map Classes */,
 				169577F71E8A975F00EAC913 /* AppDelegate.h */,
 				169577F81E8A975F00EAC913 /* AppDelegate.m */,
 				169577FA1E8A975F00EAC913 /* ViewController.h */,
@@ -146,9 +154,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		282049711E8BE85F007F6719 /* MapOverlay */ = {
+		282049711E8BE85F007F6719 /* Map Classes */ = {
 			isa = PBXGroup;
 			children = (
+				28F076F71E92750A00B7B7B4 /* BuildingAnnotationView.h */,
+				28F076F81E92750A00B7B7B4 /* BuildingAnnotationView.m */,
+				28F076F41E92745700B7B7B4 /* BuildingAnnotation.h */,
+				28F076F51E92745700B7B7B4 /* BuildingAnnotation.m */,
 				28CB15E01E8CB21400513304 /* Campus.h */,
 				28CB15E11E8CB21400513304 /* Campus.m */,
 				281D7AA21E8C99FB008EF7E4 /* MapOverlay.h */,
@@ -156,12 +168,13 @@
 				282049651E8BE7DC007F6719 /* MapOverlayView.h */,
 				282049661E8BE7DC007F6719 /* MapOverlayView.m */,
 			);
-			name = MapOverlay;
+			name = "Map Classes";
 			sourceTree = "<group>";
 		};
 		282049761E8BE890007F6719 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				28F076FA1E92754A00B7B7B4 /* Map-Pin.png */,
 				28233D511E8E84600060BAD9 /* info.png */,
 				28233D4F1E8E83C70060BAD9 /* close.png */,
 				28233D531E8E86C90060BAD9 /* campus.png */,
@@ -230,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F076FB1E92754A00B7B7B4 /* Map-Pin.png in Resources */,
 				282049631E8BE7A9007F6719 /* building_coordinates.plist in Resources */,
 				282049641E8BE7A9007F6719 /* boundaries.plist in Resources */,
 				28233D521E8E84600060BAD9 /* info.png in Resources */,
@@ -253,11 +267,13 @@
 			files = (
 				169577FC1E8A975F00EAC913 /* ViewController.m in Sources */,
 				161C81A51E8E8628008F9AE2 /* MapRoute.m in Sources */,
+				28F076F91E92750A00B7B7B4 /* BuildingAnnotationView.m in Sources */,
 				169577F91E8A975F00EAC913 /* AppDelegate.m in Sources */,
 				281D7AA41E8C99FB008EF7E4 /* MapOverlay.m in Sources */,
 				28CB15E21E8CB21400513304 /* Campus.m in Sources */,
 				169577F61E8A975F00EAC913 /* main.m in Sources */,
 				282049671E8BE7DC007F6719 /* MapOverlayView.m in Sources */,
+				28F076F61E92745700B7B7B4 /* BuildingAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

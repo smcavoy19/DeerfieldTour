@@ -16,6 +16,35 @@
 
 @implementation ViewController
 
+@synthesize coordinate;
+@synthesize boundingMapRect;
+
+#pragma mark - Private
+
+-(void)setShadowforView:(UIView *)view masksToBounds:(BOOL)masksToBounds{
+    
+    view.layer.cornerRadius = 15;
+    view.layer.shadowRadius = 2.0f;
+    view.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    view.layer.shadowOffset = CGSizeMake(-1.0f, 3.0f);
+    view.layer.shadowOpacity = 0.8f;
+    view.layer.masksToBounds = masksToBounds;
+}
+
+- (void)addBuildingPins {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"building_coordinates" ofType:@"plist"];
+    NSArray *attractions = [NSArray arrayWithContentsOfFile:filePath];
+    for (NSDictionary *attraction in attractions) {
+        BuildingAnnotation *annotation = [[BuildingAnnotation alloc] init];
+        CGPoint point = CGPointFromString(attraction[@"location"]);
+        annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
+        annotation.title = attraction[@"name"];
+        annotation.info = attraction[@"info"];
+        [self.mapView addAnnotation:annotation];
+    }
+}
+
 #pragma mark - IBActions
 
 - (IBAction)mapTypeChanged:(id)sender {
@@ -38,7 +67,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:0.2 animations:^{
-            self.menuHeight.constant = 55;
+            self.menuHeight.constant = 85;
             self.menuView.alpha = 1.0;
             [self.view layoutIfNeeded];
         }];
@@ -76,20 +105,20 @@
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    
-    return nil;
+    BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
+    annotationView.canShowCallout = YES;
+    return annotationView;
 }
-
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     
     CLLocationDegrees lat = 42.54444;
     CLLocationDegrees lon =  -72.60611;
-    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat, lon);
+    CLLocationCoordinate2D c = CLLocationCoordinate2DMake(lat, lon);
     
     //Create a region with a 1000x1000 meter around the user location
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(coordinate, 500, 500);
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(c, 500, 500);
     CLLocationDegrees deltaLatitude = viewRegion.span.latitudeDelta;
     CLLocationDegrees deltaLongitude = viewRegion.span.longitudeDelta;
     CGFloat latitudeCircumference = 40075160 * cos(self.mapView.region.center.latitude * M_PI / 180);
@@ -103,6 +132,10 @@
     
     MapRoute* mapRoute = [[MapRoute alloc] init];
     [self.mapView addOverlay:[mapRoute addRoute]];
+    
+    [self addBuildingPins];
+    
+    [self setShadowforView:self.menuView masksToBounds:NO];
     
     [super viewDidLoad];
 }
