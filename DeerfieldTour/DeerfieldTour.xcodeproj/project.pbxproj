@@ -24,6 +24,9 @@
 		2820496E1E8BE7F8007F6719 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2820496D1E8BE7F8007F6719 /* CoreGraphics.framework */; };
 		282049701E8BE7FE007F6719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2820496F1E8BE7FE007F6719 /* Foundation.framework */; };
 		282049751E8BE88A007F6719 /* campus_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 282049741E8BE88A007F6719 /* campus_image.png */; };
+		28233D501E8E83C70060BAD9 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D4F1E8E83C70060BAD9 /* close.png */; };
+		28233D521E8E84600060BAD9 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D511E8E84600060BAD9 /* info.png */; };
+		28233D541E8E86C90060BAD9 /* campus.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D531E8E86C90060BAD9 /* campus.png */; };
 		287D6AC41E8DE65F00A42BE4 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 287D6AC31E8DE65F00A42BE4 /* map.png */; };
 		28CB15E21E8CB21400513304 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB15E11E8CB21400513304 /* Campus.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,9 @@
 		2820496D1E8BE7F8007F6719 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2820496F1E8BE7FE007F6719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		282049741E8BE88A007F6719 /* campus_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus_image.png; sourceTree = "<group>"; };
+		28233D4F1E8E83C70060BAD9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		28233D511E8E84600060BAD9 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		28233D531E8E86C90060BAD9 /* campus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus.png; sourceTree = "<group>"; };
 		287D6AC31E8DE65F00A42BE4 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		28CB15E01E8CB21400513304 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		28CB15E11E8CB21400513304 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 		282049761E8BE890007F6719 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				28233D511E8E84600060BAD9 /* info.png */,
+				28233D4F1E8E83C70060BAD9 /* close.png */,
+				28233D531E8E86C90060BAD9 /* campus.png */,
 				287D6AC31E8DE65F00A42BE4 /* map.png */,
 				282049741E8BE88A007F6719 /* campus_image.png */,
 			);
@@ -223,6 +232,9 @@
 			files = (
 				282049631E8BE7A9007F6719 /* building_coordinates.plist in Resources */,
 				282049641E8BE7A9007F6719 /* boundaries.plist in Resources */,
+				28233D521E8E84600060BAD9 /* info.png in Resources */,
+				28233D501E8E83C70060BAD9 /* close.png in Resources */,
+				28233D541E8E86C90060BAD9 /* campus.png in Resources */,
 				282049751E8BE88A007F6719 /* campus_image.png in Resources */,
 				169578041E8A975F00EAC913 /* LaunchScreen.storyboard in Resources */,
 				287D6AC41E8DE65F00A42BE4 /* map.png in Resources */,

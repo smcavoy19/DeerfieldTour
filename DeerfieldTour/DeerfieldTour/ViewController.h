@@ -18,6 +18,9 @@
 
 @property (strong, nonatomic) Campus *campus;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuHeight;
+@property (weak, nonatomic) IBOutlet UIView *menuView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mapTypeSegmentedControl;
 
 @end
 
