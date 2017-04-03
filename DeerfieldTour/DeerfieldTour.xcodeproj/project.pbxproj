@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */ = {isa = PBXBuildFile; fileRef = 161C81A11E8E839A008F9AE2 /* route_points.plist */; };
+		161C81A51E8E8628008F9AE2 /* MapRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 161C81A41E8E8628008F9AE2 /* MapRoute.m */; };
 		169577F61E8A975F00EAC913 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577F51E8A975F00EAC913 /* main.m */; };
 		169577F91E8A975F00EAC913 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577F81E8A975F00EAC913 /* AppDelegate.m */; };
 		169577FC1E8A975F00EAC913 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577FB1E8A975F00EAC913 /* ViewController.m */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161C81A11E8E839A008F9AE2 /* route_points.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = route_points.plist; path = ../route_points.plist; sourceTree = "<group>"; };
+		161C81A31E8E8628008F9AE2 /* MapRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRoute.h; sourceTree = "<group>"; };
+		161C81A41E8E8628008F9AE2 /* MapRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRoute.m; sourceTree = "<group>"; };
 		169577F11E8A975F00EAC913 /* DeerfieldTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeerfieldTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169577F51E8A975F00EAC913 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		169577F71E8A975F00EAC913 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161C81A61E8E8633008F9AE2 /* MapRoute */ = {
+			isa = PBXGroup;
+			children = (
+				161C81A31E8E8628008F9AE2 /* MapRoute.h */,
+				161C81A41E8E8628008F9AE2 /* MapRoute.m */,
+			);
+			name = MapRoute;
+			sourceTree = "<group>";
+		};
 		169577E81E8A975F00EAC913 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 		169577F31E8A975F00EAC913 /* DeerfieldTour */ = {
 			isa = PBXGroup;
 			children = (
+				161C81A61E8E8633008F9AE2 /* MapRoute */,
 				282049711E8BE85F007F6719 /* MapOverlay */,
 				169577F71E8A975F00EAC913 /* AppDelegate.h */,
 				169577F81E8A975F00EAC913 /* AppDelegate.m */,
@@ -111,6 +126,7 @@
 			children = (
 				169578001E8A975F00EAC913 /* Assets.xcassets */,
 				169578021E8A975F00EAC913 /* LaunchScreen.storyboard */,
+				161C81A11E8E839A008F9AE2 /* route_points.plist */,
 				169578051E8A975F00EAC913 /* Info.plist */,
 				282049611E8BE7A9007F6719 /* building_coordinates.plist */,
 				282049621E8BE7A9007F6719 /* boundaries.plist */,
@@ -224,6 +240,7 @@
 				287D6AC41E8DE65F00A42BE4 /* map.png in Resources */,
 				169578011E8A975F00EAC913 /* Assets.xcassets in Resources */,
 				169577FF1E8A975F00EAC913 /* Main.storyboard in Resources */,
+				161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				169577FC1E8A975F00EAC913 /* ViewController.m in Sources */,
+				161C81A51E8E8628008F9AE2 /* MapRoute.m in Sources */,
 				169577F91E8A975F00EAC913 /* AppDelegate.m in Sources */,
 				281D7AA41E8C99FB008EF7E4 /* MapOverlay.m in Sources */,
 				28CB15E21E8CB21400513304 /* Campus.m in Sources */,

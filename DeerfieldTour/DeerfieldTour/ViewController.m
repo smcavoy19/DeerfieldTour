@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
-#
+#import "MapRoute.h"
+
 @interface ViewController ()
 
 @end
@@ -63,6 +64,12 @@
         MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map.png"]];
 
         return overlayView;
+    } else if ([overlay isKindOfClass:MKPolyline.class]) {
+        MKPolylineRenderer *lineView = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+        lineView.strokeColor = [UIColor greenColor];
+        lineView.lineWidth = 1.0;
+        
+        return lineView;
     }
     
     return nil;
@@ -93,6 +100,9 @@
     self.campus = [[Campus alloc] initWithFilename:@"boundaries"];
     MapOverlay *overlay = [[MapOverlay alloc] initWithPark:self.campus];
     [self.mapView addOverlay:overlay];
+    
+    MapRoute* mapRoute = [[MapRoute alloc] init];
+    [self.mapView addOverlay:[mapRoute addRoute]];
     
     [super viewDidLoad];
 }
