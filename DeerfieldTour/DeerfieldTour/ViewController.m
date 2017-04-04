@@ -19,6 +19,21 @@
 @synthesize coordinate;
 @synthesize boundingMapRect;
 
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    UIAlertView *errorAlert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"There was an error retrieving your location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [errorAlert show];
+    NSLog(@"Error: %@",error.description);
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *currentLoc = [locations lastObject];
+    float latitude = currentLoc.coordinate.latitude;
+    float longitude = currentLoc.coordinate.longitude;
+    float altitude = currentLoc.altitude;
+    float speed = currentLoc.speed;
+}
+
 #pragma mark - Private
 
 -(void)setShadowforView:(UIView *)view masksToBounds:(BOOL)masksToBounds{
