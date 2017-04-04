@@ -6,17 +6,17 @@
 		<key>title</key>
 		<string>Hess Center for the Arts</string>
 		<key>location</key>
-		<string>{42.546472, -72.605948}</string>
+		<string>{42.546641, -72.605906}</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>The Boyden Library</string>
 		<key>location</key>
-		<string>{42.546777, -72.60684}</string>
+		<string>{42.546843, -72.606829}</string>
 	</dict>
 	<dict>
 		<key>location</key>
-		<string>{42.546864, -72.607722}</string>
+		<string>{42.546924, -72.607846}</string>
 		<key>title</key>
 		<string>The Kock Center</string>
 	</dict>

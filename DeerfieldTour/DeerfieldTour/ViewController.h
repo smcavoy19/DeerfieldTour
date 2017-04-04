@@ -13,10 +13,8 @@
 #import "MapOverlay.h"
 #import "MapOverlayView.h"
 #import "Campus.h"
-#import "BuildingAnnotation.h"
-#import "BuildingAnnotationView.h"
 
-@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate>
+@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation>
 
 @property CLLocationManager *locationManager;
 @property (strong, nonatomic) Campus *campus;

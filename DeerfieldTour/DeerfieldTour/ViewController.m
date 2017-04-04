@@ -51,11 +51,11 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"building_coordinates" ofType:@"plist"];
     NSArray *attractions = [NSArray arrayWithContentsOfFile:filePath];
     for (NSDictionary *attraction in attractions) {
-        BuildingAnnotation *annotation = [[BuildingAnnotation alloc] init];
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
         CGPoint point = CGPointFromString(attraction[@"location"]);
         annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
-        annotation.title = attraction[@"name"];
-        annotation.info = attraction[@"info"];
+        annotation.title = annotation.title = attraction[@"name"];
+        
         [self.mapView addAnnotation:annotation];
     }
 }
@@ -102,6 +102,13 @@
 
 #pragma mark - Map View delegate
 
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    
+}
+- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view{
+    
+}
+
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     
     if ([overlay isKindOfClass:MapOverlay.class]) {
@@ -121,9 +128,8 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
 
-    BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
-    annotationView.canShowCallout = YES;
-    return annotationView;
+    if (annotation == mapView.userLocation) return nil;
+    return nil;
 }
 #pragma mark - Life Cycle
 
