@@ -16,8 +16,9 @@
 #import "BuildingAnnotation.h"
 #import "BuildingAnnotationView.h"
 
-@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate>
+@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate>
 
+@property CLLocationManager *locationManager;
 @property (strong, nonatomic) Campus *campus;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuHeight;

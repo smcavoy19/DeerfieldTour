@@ -95,7 +95,7 @@
         return overlayView;
     } else if ([overlay isKindOfClass:MKPolyline.class]) {
         MKPolylineRenderer *lineView = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-        lineView.strokeColor = [UIColor greenColor];
+        lineView.strokeColor = [UIColor redColor];
         lineView.lineWidth = 1.0;
         
         return lineView;
@@ -105,6 +105,7 @@
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+
     BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
     annotationView.canShowCallout = YES;
     return annotationView;
@@ -132,10 +133,20 @@
     
     MapRoute* mapRoute = [[MapRoute alloc] init];
     [self.mapView addOverlay:[mapRoute addRoute]];
-    
+
     [self addBuildingPins];
-    
     [self setShadowforView:self.menuView masksToBounds:NO];
+
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        [self.locationManager requestWhenInUseAuthorization];
+    
+    [self.locationManager startUpdatingLocation];
+    [self.locationManager stopUpdatingLocation];
     
     [super viewDidLoad];
 }

@@ -36,4 +36,19 @@
     return myPolyline;
 }
 
+- (int) distanceToNextTurn{
+    //current user location
+    //next turn location
+    //formula distance between point
+    //return distance
+    return -1;
+}
+
+- (BOOL) turnLeft{
+    //find the angle between the two lines
+    //based off the angle return left,right,slightleft,slightright
+    //return true if next turn is a left
+    return false;
+}
+
 @end

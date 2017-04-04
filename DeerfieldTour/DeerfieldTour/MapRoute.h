@@ -15,5 +15,7 @@
 
 - (instancetype)initWithFilename:(NSString *)filename;
 - (MKPolyline*)addRoute;
+- (int) distanceToNextTurn;
+- (BOOL) turnLeft;
 
 @end

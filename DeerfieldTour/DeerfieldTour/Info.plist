@@ -33,5 +33,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app requires your current location</string>
 </dict>
 </plist>
