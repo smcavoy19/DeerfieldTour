@@ -12,13 +12,14 @@
 #import <MapKit/MapKit.h>
 
 @interface MapRoute : NSObject
-@property CLLocationCoordinate2D* pointInRoute;
+@property NSMutableArray* pointInRoute;
 - (instancetype)initWithFilename:(NSString *)filename;
 - (MKPolyline*)addRoute;
-- (int) distanceToNextTurn;
+- (int) distanceToNextTurn:(CLLocation*) locationOfUser;
 - (BOOL) turnLeft;
 //distance from path
 //route to path
 //on path
 //speed currentLocation.speed
+//which direction
 @end

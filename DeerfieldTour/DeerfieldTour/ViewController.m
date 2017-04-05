@@ -19,19 +19,11 @@
 @synthesize coordinate;
 @synthesize boundingMapRect;
 
--(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    UIAlertView *errorAlert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"There was an error retrieving your location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [errorAlert show];
-    NSLog(@"Error: %@",error.description);
-}
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *currentLoc = [locations lastObject];
-    float latitude = currentLoc.coordinate.latitude;
-    float longitude = currentLoc.coordinate.longitude;
-    float altitude = currentLoc.altitude;
-    float speed = currentLoc.speed;
+    
 }
 
 #pragma mark - Private
@@ -138,13 +130,7 @@
     CLLocationDegrees lat = 42.54444;
     CLLocationDegrees lon =  -72.60611;
     CLLocationCoordinate2D c = CLLocationCoordinate2DMake(lat, lon);
-    
-    //Create a region with a 1000x1000 meter around the user location
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(c, 500, 500);
-    CLLocationDegrees deltaLatitude = viewRegion.span.latitudeDelta;
-    CLLocationDegrees deltaLongitude = viewRegion.span.longitudeDelta;
-    CGFloat latitudeCircumference = 40075160 * cos(self.mapView.region.center.latitude * M_PI / 180);
-    NSLog(@"x: %f; y: %f", deltaLongitude * latitudeCircumference / 360, deltaLatitude * 40008000 / 360);
     
     [self.mapView setRegion:viewRegion];
     
@@ -154,6 +140,8 @@
     
     MapRoute* mapRoute = [[MapRoute alloc] init];
     [self.mapView addOverlay:[mapRoute addRoute]];
+    CLLocation *cur = [[CLLocation alloc] initWithLatitude:42.54555 longitude: -72.605354];
+    [mapRoute distanceToNextTurn:cur];
 
     [self addBuildingPins];
     [self setShadowforView:self.menuView masksToBounds:NO];
