@@ -20,18 +20,32 @@
 @synthesize boundingMapRect;
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    UIAlertView *errorAlert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"There was an error retrieving your location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [errorAlert show];
-    NSLog(@"Error: %@",error.description);
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"There is an error retrieving your location" message:@"Please try again later" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    [alert addAction:action];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:alert animated:YES completion:nil];
+    });
+    NSLog(@"%@", error.description);
 }
 
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    
     CLLocation *currentLoc = [locations lastObject];
-    float latitude = currentLoc.coordinate.latitude;
-    float longitude = currentLoc.coordinate.longitude;
-    float altitude = currentLoc.altitude;
-    float speed = currentLoc.speed;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"building_coordinates" ofType:@"plist"];
+    NSDictionary *first = [NSArray arrayWithContentsOfFile:filePath].firstObject;
+    CGPoint point = CGPointFromString(first[@"location"]);
+    float dist = [self dist:CGPointMake((float)currentLoc.coordinate.latitude, (float)currentLoc.coordinate.longitude) b:point];
+    if (dist < 0.0005) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome to the dinning hall!" message:@"You location indicates that you are close to the dinning hall" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        }];
+        [alert addAction:action];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentViewController:alert animated:YES completion:nil];
+        });
+    }
 }
 
 #pragma mark - Private
@@ -58,6 +72,10 @@
         
         [self.mapView addAnnotation:annotation];
     }
+}
+
+-(float)dist:(CGPoint)a b:(CGPoint)b{
+    return sqrtf(powf(a.x-b.x, 2.0) + powf(a.y-b.y, 2.0));
 }
 
 #pragma mark - IBActions
@@ -112,7 +130,7 @@
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     
     if ([overlay isKindOfClass:MapOverlay.class]) {
-        MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map.png"]];
+        MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map copy.png"]];
 
         return overlayView;
     } else if ([overlay isKindOfClass:MKPolyline.class]) {
@@ -129,6 +147,9 @@
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
 
     if (annotation == mapView.userLocation) return nil;
+    BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
+    annotationView.canShowCallout = YES;
+    return annotationView;
     return nil;
 }
 #pragma mark - Life Cycle
@@ -167,7 +188,6 @@
         [self.locationManager requestWhenInUseAuthorization];
     
     [self.locationManager startUpdatingLocation];
-    [self.locationManager stopUpdatingLocation];
     
     [super viewDidLoad];
 }

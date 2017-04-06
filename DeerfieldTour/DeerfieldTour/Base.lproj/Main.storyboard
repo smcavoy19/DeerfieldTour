@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E175b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E175b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lhv-6E-6c6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Deerfield Tour-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -72,7 +69,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta9-I9-VHW">
-                                <rect key="frame" x="334" y="28" width="25" height="25"/>
+                                <rect key="frame" x="334" y="72" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7wN-Rv-kaN"/>
                                     <constraint firstAttribute="width" constant="25" id="mzx-oo-AYy"/>
@@ -97,16 +94,79 @@
                             <constraint firstAttribute="trailing" secondItem="dJU-4l-yRP" secondAttribute="trailing" constant="8" id="zek-dj-xoQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Deerfield Tour" id="362-gO-dcP"/>
                     <connections>
                         <outlet property="mapTypeSegmentedControl" destination="f0h-lx-uAb" id="dyR-w7-5S1"/>
                         <outlet property="mapView" destination="lFw-qW-gz5" id="tGR-uL-fYz"/>
                         <outlet property="menuHeight" destination="lpd-2Y-hrO" id="2fK-zj-sNc"/>
                         <outlet property="menuView" destination="dJU-4l-yRP" id="eBJ-qY-kDK"/>
+                        <segue destination="bAf-kQ-Euo" kind="show" id="SKP-iV-VXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="135"/>
+            <point key="canvasLocation" x="1008.8" y="134.48275862068968"/>
+        </scene>
+        <!--The Boyden Library-->
+        <scene sceneID="yXZ-kc-J8m">
+            <objects>
+                <viewController id="bAf-kQ-Euo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4RU-QK-qIh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ktc-YR-V0m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cys-vT-k9v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-9l-E5m">
+                                <rect key="frame" x="0.0" y="72" width="375" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="6M7-ii-qBP"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-YU-Yev">
+                                <rect key="frame" x="12" y="314" width="351" height="353"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cgc-9l-E5m" firstAttribute="leading" secondItem="cys-vT-k9v" secondAttribute="leading" id="B0t-AQ-BUT"/>
+                            <constraint firstItem="9j8-YU-Yev" firstAttribute="top" secondItem="Cgc-9l-E5m" secondAttribute="bottom" constant="8" id="KHn-3h-4i7"/>
+                            <constraint firstAttribute="trailing" secondItem="9j8-YU-Yev" secondAttribute="trailing" constant="12" id="Oze-4Z-WKH"/>
+                            <constraint firstItem="Cgc-9l-E5m" firstAttribute="top" secondItem="4RU-QK-qIh" secondAttribute="bottom" constant="8" id="SI8-dF-Ur4"/>
+                            <constraint firstItem="Ktc-YR-V0m" firstAttribute="top" secondItem="9j8-YU-Yev" secondAttribute="bottom" id="VV2-LE-zLa"/>
+                            <constraint firstAttribute="trailing" secondItem="Cgc-9l-E5m" secondAttribute="trailing" id="fx0-ZH-HDp"/>
+                            <constraint firstItem="9j8-YU-Yev" firstAttribute="leading" secondItem="cys-vT-k9v" secondAttribute="leading" constant="12" id="wnl-zS-15g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Boyden Library" id="4mx-d6-m37"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcR-D9-AgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.4000000000001" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Pa-9l-xh7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lhv-6E-6c6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dsp-Vh-xPM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="373-aV-BER"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSe-uS-ePS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="134.48275862068968"/>
         </scene>
     </scenes>
     <resources>

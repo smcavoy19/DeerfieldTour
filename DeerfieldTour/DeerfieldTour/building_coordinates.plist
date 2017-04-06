@@ -4,6 +4,30 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Dinning Hall</string>
+		<key>location</key>
+		<string>{42.544653, -72.607082}</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Atheletic Center</string>
+		<key>location</key>
+		<string>{42.544783, -72.607984}</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Main School Building</string>
+		<key>location</key>
+		<string>{42.545543, -72.605581}</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Arms Building</string>
+		<key>location</key>
+		<string>{42.546033, -72.605447}</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Hess Center for the Arts</string>
 		<key>location</key>
 		<string>{42.546641, -72.605906}</string>
