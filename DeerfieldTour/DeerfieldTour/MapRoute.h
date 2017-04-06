@@ -20,6 +20,6 @@
 //distance from path
 //route to path
 //on path
-//speed currentLocation.speed
+//speed currentLocation.speed to measure how often to check
 //which direction
 @end
