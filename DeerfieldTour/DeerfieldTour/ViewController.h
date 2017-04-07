@@ -15,14 +15,17 @@
 #import "Campus.h"
 #import "BuildingAnnotationView.h"
 
-@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation>
+@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation, UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *table;
+@property (strong, nonatomic) NSMutableArray *buildings;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) Campus *campus;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuHeight;
 @property (weak, nonatomic) IBOutlet UIView *menuView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mapTypeSegmentedControl;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableHeight;
 
 @end
 

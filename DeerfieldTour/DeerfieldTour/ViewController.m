@@ -19,6 +19,35 @@
 @synthesize coordinate;
 @synthesize boundingMapRect;
 
+#pragma mark - UITableView Delegate
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableCell" forIndexPath:indexPath];
+    cell.textLabel.text = [self.buildings objectAtIndex:indexPath.row];
+    return cell;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.buildings.count;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"You are close to:";
+}
+
+
+#pragma mark - Location Manager
+
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"There is an error retrieving your location" message:@"Please try again later" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -32,18 +61,39 @@
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
     
+    if (self.tableHeight.constant == 0) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.3 animations:^{
+                self.tableHeight.constant = 130;
+                [self.view layoutIfNeeded];
+            }];
+        });
+    }
+    
     CLLocation *currentLoc = [locations lastObject];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"building_coordinates" ofType:@"plist"];
-    NSDictionary *first = [NSArray arrayWithContentsOfFile:filePath].firstObject;
-    CGPoint point = CGPointFromString(first[@"location"]);
-    float dist = [self dist:CGPointMake((float)currentLoc.coordinate.latitude, (float)currentLoc.coordinate.longitude) b:point];
-    if (dist < 0.0005) {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome to the dinning hall!" message:@"You location indicates that you are close to the dinning hall" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        }];
-        [alert addAction:action];
+    
+    for (NSDictionary *dic in [NSArray arrayWithContentsOfFile:filePath]) {
+        CGPoint point = CGPointFromString(dic[@"location"]);
+        float dist = [self dist:CGPointMake((float)currentLoc.coordinate.latitude, (float)currentLoc.coordinate.longitude) b:point];
+        if (dist < 0.0005) {
+            if (![self.buildings containsObject:[dic objectForKey:@"title"]]) {
+                [self.buildings addObject:[dic objectForKey:@"title"]];
+                [self.table reloadData];
+            }
+        }else if (dist > 0.0005){
+            if ([self.buildings containsObject:[dic objectForKey:@"title"]]) {
+                [self.buildings removeObject:[dic objectForKey:@"title"]];
+                [self.table reloadData];
+            }
+        }
+    }
+    if (self.buildings.count == 0) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self presentViewController:alert animated:YES completion:nil];
+            [UIView animateWithDuration:0.3 animations:^{
+                self.tableHeight.constant = 0;
+                [self.view layoutIfNeeded];
+            }];
         });
     }
 }
@@ -184,6 +234,9 @@
         [self.locationManager requestWhenInUseAuthorization];
     
     [self.locationManager startUpdatingLocation];
+    
+    self.buildings = [NSMutableArray array];
+    self.tableHeight.constant = 0;
     
     [super viewDidLoad];
 }

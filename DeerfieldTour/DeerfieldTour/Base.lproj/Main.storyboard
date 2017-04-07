@@ -68,6 +68,27 @@
                                     <constraint firstAttribute="bottom" secondItem="cRJ-zd-NZD" secondAttribute="bottom" constant="8" id="y9x-ra-thR"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ux1-YX-6W5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="Gzs-TM-xf0"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="W1h-nb-cUE">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W1h-nb-cUE" id="AJU-DZ-GXE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="AOO-kb-00H"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="59Z-a8-LGo"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta9-I9-VHW">
                                 <rect key="frame" x="334" y="72" width="25" height="25"/>
                                 <constraints>
@@ -82,6 +103,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ux1-YX-6W5" secondAttribute="trailing" id="6n9-bb-RdQ"/>
                             <constraint firstAttribute="trailing" secondItem="lFw-qW-gz5" secondAttribute="trailing" id="LBV-Tu-HJF"/>
                             <constraint firstItem="lFw-qW-gz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R8N-16-1jq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dJU-4l-yRP" secondAttribute="bottom" constant="8" id="ZnB-au-233"/>
@@ -89,9 +111,11 @@
                             <constraint firstItem="dJU-4l-yRP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="bz6-hX-pcE"/>
                             <constraint firstItem="lFw-qW-gz5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eHA-vJ-E13"/>
                             <constraint firstItem="Ta9-I9-VHW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="hcb-3U-Zpc"/>
+                            <constraint firstItem="ux1-YX-6W5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rYr-i0-IZW"/>
                             <constraint firstItem="Ta9-I9-VHW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="t2e-rP-30V"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lFw-qW-gz5" secondAttribute="bottom" id="yeE-kX-UWt"/>
                             <constraint firstAttribute="trailing" secondItem="dJU-4l-yRP" secondAttribute="trailing" constant="8" id="zek-dj-xoQ"/>
+                            <constraint firstItem="ux1-YX-6W5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zkD-J2-YRs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Deerfield Tour" id="362-gO-dcP"/>
@@ -100,6 +124,8 @@
                         <outlet property="mapView" destination="lFw-qW-gz5" id="tGR-uL-fYz"/>
                         <outlet property="menuHeight" destination="lpd-2Y-hrO" id="2fK-zj-sNc"/>
                         <outlet property="menuView" destination="dJU-4l-yRP" id="eBJ-qY-kDK"/>
+                        <outlet property="table" destination="ux1-YX-6W5" id="2Pc-aO-sbM"/>
+                        <outlet property="tableHeight" destination="Gzs-TM-xf0" id="lSi-1E-2u9"/>
                         <segue destination="bAf-kQ-Euo" kind="show" id="SKP-iV-VXv"/>
                     </connections>
                 </viewController>
