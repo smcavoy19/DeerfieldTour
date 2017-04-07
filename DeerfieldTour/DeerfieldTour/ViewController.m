@@ -218,9 +218,10 @@
     [self.mapView addOverlay:overlay];
     
     MapRoute* mapRoute = [[MapRoute alloc] init];
-    [self.mapView addOverlay:[mapRoute addRoute]];
+    [mapRoute createGraph];
+    [self.mapView addOverlay:[mapRoute addRoute:nil toFinish:nil]];
     CLLocation *cur = [[CLLocation alloc] initWithLatitude:42.54555 longitude: -72.605354];
-    [mapRoute distanceToNextTurn:cur];
+
 
     [self addBuildingPins];
     [self setShadowforView:self.menuView masksToBounds:NO];

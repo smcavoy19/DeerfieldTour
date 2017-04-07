@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<string>{42.54555, -72.605345}</string>
-	<string>{42.5455, -72.604865}</string>
-	<string>{42.54575,-72.604765}</string>
-</array>
+<dict>
+	<key>MSB</key>
+	<dict>
+		<key>connections</key>
+		<array>
+			<string>{42.5455, -72.604865}</string>
+		</array>
+		<key>coordinate</key>
+		<string>{42.54555, -72.605345}</string>
+	</dict>
+	<key>Point1</key>
+	<dict>
+		<key>connections</key>
+		<array>
+			<string>{42.54555, -72.605345}</string>
+			<string>{42.54575,-72.604765}</string>
+		</array>
+		<key>coordinate</key>
+		<string>{42.5455, -72.604865}</string>
+	</dict>
+	<key>Point2</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.54575,-72.604765}</string>
+		<key>connections</key>
+		<array>
+			<string>{42.5455, -72.604865}</string>
+		</array>
+	</dict>
+</dict>
 </plist>

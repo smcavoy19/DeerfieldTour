@@ -10,16 +10,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Coordinate.h"
 
 @interface MapRoute : NSObject
-@property NSMutableArray* pointInRoute;
+@property NSMutableDictionary* graph;
+
+-(void) createGraph;
 - (instancetype)initWithFilename:(NSString *)filename;
-- (MKPolyline*)addRoute;
-- (int) distanceToNextTurn:(CLLocation*) locationOfUser;
-- (BOOL) turnLeft;
-//distance from path
-//route to path
-//on path
-//speed currentLocation.speed to measure how often to check
-//which direction
+- (MKPolyline*)addRoute:(CLLocation*) start toFinish:(CLLocation*) finish;
+- (int) distanceFrom:(CLLocation*) locationOfUser to:(CLLocation*) next;
+
+
 @end
