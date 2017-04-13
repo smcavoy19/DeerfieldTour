@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
+#import "MapRoute.h"
 #import "MapOverlay.h"
 #import "MapOverlayView.h"
 #import "Campus.h"
@@ -26,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIView *menuView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mapTypeSegmentedControl;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableHeight;
+@property (strong, nonatomic) CLLocation *currentLocation;
 
 @end
 

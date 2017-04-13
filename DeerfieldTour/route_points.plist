@@ -2,33 +2,73 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Koch</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546863, -72.607861}</string>
+		<key>connections</key>
+		<dict>
+			<key>Library</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Library</key>
+	<dict>
+		<key>connections</key>
+		<dict>
+			<key>Hess</key>
+			<integer>0</integer>
+			<key>Koch</key>
+			<integer>0</integer>
+		</dict>
+		<key>coordinate</key>
+		<string>{42.546792, -72.606834}</string>
+	</dict>
 	<key>MSB</key>
 	<dict>
 		<key>connections</key>
-		<array>
-			<string>{42.5455, -72.604865}</string>
-		</array>
+		<dict>
+			<key>point1</key>
+			<integer>0</integer>
+		</dict>
 		<key>coordinate</key>
 		<string>{42.54555, -72.605345}</string>
 	</dict>
-	<key>Point1</key>
+	<key>point1</key>
 	<dict>
 		<key>connections</key>
-		<array>
-			<string>{42.54555, -72.605345}</string>
-			<string>{42.54575,-72.604765}</string>
-		</array>
+		<dict>
+			<key>MSB</key>
+			<integer>-1</integer>
+			<key>point2</key>
+			<integer>-1</integer>
+		</dict>
 		<key>coordinate</key>
-		<string>{42.5455, -72.604865}</string>
+		<string>{42.545503, -72.604955}</string>
 	</dict>
-	<key>Point2</key>
+	<key>point2</key>
 	<dict>
 		<key>coordinate</key>
-		<string>{42.54575,-72.604765}</string>
+		<string>{42.546231, -72.605217}</string>
 		<key>connections</key>
-		<array>
-			<string>{42.5455, -72.604865}</string>
-		</array>
+		<dict>
+			<key>point1</key>
+			<integer>0</integer>
+			<key>Hess</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Hess</key>
+	<dict>
+		<key>connections</key>
+		<dict>
+			<key>Library</key>
+			<integer>0</integer>
+			<key>point2</key>
+			<integer>0</integer>
+		</dict>
+		<key>coordinate</key>
+		<string>{42.546285, -72.606007}</string>
 	</dict>
 </dict>
 </plist>

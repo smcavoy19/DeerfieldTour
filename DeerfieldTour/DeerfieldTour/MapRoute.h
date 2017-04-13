@@ -11,14 +11,17 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Coordinate.h"
+#import "PQ.h"
+#import "Graph.h"
+#import <limits.h>
 
 @interface MapRoute : NSObject
-@property NSMutableDictionary* graph;
 
--(void) createGraph;
+@property (strong, nonatomic) Graph *graph;
+@property (retain, nonatomic) id delegate;
 - (instancetype)initWithFilename:(NSString *)filename;
 - (MKPolyline*)addRoute:(CLLocation*) start toFinish:(CLLocation*) finish;
-- (int) distanceFrom:(CLLocation*) locationOfUser to:(CLLocation*) next;
-
+- (float) distanceFrom:(CLLocation*) locationOfUser to:(CLLocation*) next;
+-(MKPolyline *) routeStart:(NSString*) start toFinish:(NSString*) finish;
 
 @end

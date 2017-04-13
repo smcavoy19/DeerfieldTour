@@ -61,6 +61,8 @@
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
     
+    self.currentLocation= locations.lastObject;
+    
     if (self.tableHeight.constant == 0) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:0.3 animations:^{
@@ -217,11 +219,9 @@
     MapOverlay *overlay = [[MapOverlay alloc] initWithPark:self.campus];
     [self.mapView addOverlay:overlay];
     
-    MapRoute* mapRoute = [[MapRoute alloc] init];
-    [mapRoute createGraph];
-    [self.mapView addOverlay:[mapRoute addRoute:nil toFinish:nil]];
-    CLLocation *cur = [[CLLocation alloc] initWithLatitude:42.54555 longitude: -72.605354];
-
+    MapRoute* mapRoute = [[MapRoute alloc] initWithFilename:@"route_points"];
+    MKPolyline *route = [mapRoute routeStart:@"MSB" toFinish:@"Koch"];
+    [self.mapView addOverlay:route];
 
     [self addBuildingPins];
     [self setShadowforView:self.menuView masksToBounds:NO];

@@ -32,6 +32,10 @@
 		28233D541E8E86C90060BAD9 /* campus.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D531E8E86C90060BAD9 /* campus.png */; };
 		287D6AC41E8DE65F00A42BE4 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 287D6AC31E8DE65F00A42BE4 /* map.png */; };
 		28CB15E21E8CB21400513304 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB15E11E8CB21400513304 /* Campus.m */; };
+		28CC1A511EA0763700290DD2 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4C1EA0763700290DD2 /* Graph.m */; };
+		28CC1A521EA0763700290DD2 /* Heap.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4E1EA0763700290DD2 /* Heap.m */; };
+		28CC1A531EA0763700290DD2 /* PQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A501EA0763700290DD2 /* PQ.m */; };
+		28CC1A561EA0772A00290DD2 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A551EA0772A00290DD2 /* Vertex.m */; };
 		28F076FB1E92754A00B7B7B4 /* Map-Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F076FA1E92754A00B7B7B4 /* Map-Pin.png */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,14 @@
 		287D6AC31E8DE65F00A42BE4 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		28CB15E01E8CB21400513304 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		28CB15E11E8CB21400513304 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		28CC1A4B1EA0763700290DD2 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		28CC1A4C1EA0763700290DD2 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		28CC1A4D1EA0763700290DD2 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		28CC1A4E1EA0763700290DD2 /* Heap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Heap.m; sourceTree = "<group>"; };
+		28CC1A4F1EA0763700290DD2 /* PQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
+		28CC1A501EA0763700290DD2 /* PQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQ.m; sourceTree = "<group>"; };
+		28CC1A541EA0772A00290DD2 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		28CC1A551EA0772A00290DD2 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		28F076FA1E92754A00B7B7B4 /* Map-Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map-Pin.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +104,14 @@
 		161C81A61E8E8633008F9AE2 /* MapRoute */ = {
 			isa = PBXGroup;
 			children = (
+				28CC1A541EA0772A00290DD2 /* Vertex.h */,
+				28CC1A551EA0772A00290DD2 /* Vertex.m */,
+				28CC1A4B1EA0763700290DD2 /* Graph.h */,
+				28CC1A4C1EA0763700290DD2 /* Graph.m */,
+				28CC1A4D1EA0763700290DD2 /* Heap.h */,
+				28CC1A4E1EA0763700290DD2 /* Heap.m */,
+				28CC1A4F1EA0763700290DD2 /* PQ.h */,
+				28CC1A501EA0763700290DD2 /* PQ.m */,
 				161C81A31E8E8628008F9AE2 /* MapRoute.h */,
 				161C81A41E8E8628008F9AE2 /* MapRoute.m */,
 			);
@@ -277,6 +297,10 @@
 				169577F61E8A975F00EAC913 /* main.m in Sources */,
 				282049671E8BE7DC007F6719 /* MapOverlayView.m in Sources */,
 				280539DC1E93EE0800F0A18D /* BuildingAnnotation.m in Sources */,
+				28CC1A531EA0763700290DD2 /* PQ.m in Sources */,
+				28CC1A561EA0772A00290DD2 /* Vertex.m in Sources */,
+				28CC1A521EA0763700290DD2 /* Heap.m in Sources */,
+				28CC1A511EA0763700290DD2 /* Graph.m in Sources */,
 				280539DB1E93EE0800F0A18D /* BuildingAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
