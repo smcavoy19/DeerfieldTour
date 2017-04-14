@@ -90,14 +90,6 @@
             }
         }
     }
-    if (self.buildings.count == 0) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [UIView animateWithDuration:0.3 animations:^{
-                self.tableHeight.constant = 0;
-                [self.view layoutIfNeeded];
-            }];
-        });
-    }
 }
 
 #pragma mark - Private
@@ -148,28 +140,6 @@
     }
 }
 
-- (IBAction)showMenu:(id)sender {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [UIView animateWithDuration:0.2 animations:^{
-            self.menuHeight.constant = 85;
-            self.menuView.alpha = 1.0;
-            [self.view layoutIfNeeded];
-        }];
-    });
-}
-
-- (IBAction)closeMenu:(id)sender {
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [UIView animateWithDuration:0.2 animations:^{
-            self.menuHeight.constant = -30;
-            self.menuView.alpha = 0.0;
-            [self.view layoutIfNeeded];
-        }];
-    });
-}
-
 #pragma mark - Map View delegate
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
@@ -195,6 +165,42 @@
     
     return nil;
 }
+- (IBAction)segmentSelected:(id)sender {
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        self.vicinityTable.hidden = NO;
+        self.startTextfield.hidden = YES;
+        self.endTextField.hidden = YES;
+        self.directionButton.hidden = YES;
+        self.mapTypeSegmentedControl.hidden = YES;
+    }else if (self.segmentedControl.selectedSegmentIndex == 1) {
+        self.vicinityTable.hidden = YES;
+        self.startTextfield.hidden = NO;
+        self.endTextField.hidden = NO;
+        self.directionButton.hidden = NO;
+        self.mapTypeSegmentedControl.hidden = YES;
+    }else{
+        self.vicinityTable.hidden = YES;
+        self.startTextfield.hidden = YES;
+        self.endTextField.hidden = YES;
+        self.directionButton.hidden = YES;
+        self.mapTypeSegmentedControl.hidden = NO;
+    }
+}
+- (IBAction)findDirection:(id)sender {
+    [self clearPolyline];
+    MapRoute* mapRoute = [[MapRoute alloc] initWithFilename:@"route_points"];
+    MKPolyline *route = [mapRoute routeStart:self.startTextfield.text toFinish:self.endTextField.text];
+    [self.mapView addOverlay:route];
+}
+
+-(void)clearPolyline{
+    for (MapOverlay *overlay in self.mapView.overlays) {
+        if ([overlay isKindOfClass:[MKPolyline class]]) {
+            [self.mapView removeOverlay:overlay];
+        }
+    }
+}
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
 
@@ -219,12 +225,7 @@
     MapOverlay *overlay = [[MapOverlay alloc] initWithPark:self.campus];
     [self.mapView addOverlay:overlay];
     
-    MapRoute* mapRoute = [[MapRoute alloc] initWithFilename:@"route_points"];
-    MKPolyline *route = [mapRoute routeStart:@"MSB" toFinish:@"Koch"];
-    [self.mapView addOverlay:route];
-
     [self addBuildingPins];
-    [self setShadowforView:self.menuView masksToBounds:NO];
 
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -237,8 +238,8 @@
     [self.locationManager startUpdatingLocation];
     
     self.buildings = [NSMutableArray array];
-    self.tableHeight.constant = 0;
     
+    [self segmentSelected:nil];
     [super viewDidLoad];
 }
 

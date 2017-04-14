@@ -94,9 +94,12 @@
     NSMutableArray *array = [NSMutableArray array];
     Vertex *e = [self.graph.adjacencyList objectForKey:finish];
     [array addObject:e.coordinate];
+    NSLog(@"%@", e.key);
     while (e.previous) {
-        [array addObject:e.coordinate];
         e = e.previous;
+        [array addObject:e.coordinate];
+        NSLog(@"%@", e.key);
+        
     }
     CLLocationCoordinate2D pointsInRoute[[array count]];
     for(int i = 0; i < [array count]; i++) {
