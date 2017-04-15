@@ -4,13 +4,13 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Dinning Hall</string>
+		<string>Dining Hall</string>
 		<key>location</key>
 		<string>{42.544653, -72.607082}</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Atheletic Center</string>
+		<string>Athletic Center</string>
 		<key>location</key>
 		<string>{42.544783, -72.607984}</string>
 	</dict>
@@ -42,7 +42,7 @@
 		<key>location</key>
 		<string>{42.546924, -72.607846}</string>
 		<key>title</key>
-		<string>The Kock Center</string>
+		<string>The Koch Center</string>
 	</dict>
 </array>
 </plist>
