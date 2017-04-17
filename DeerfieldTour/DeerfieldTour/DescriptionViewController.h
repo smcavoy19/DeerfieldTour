@@ -13,5 +13,6 @@
 @property NSString* building;
 @property (strong, nonatomic) IBOutlet UITextView *summary;
 @property (strong, nonatomic) IBOutlet UINavigationItem *buildingHeader;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

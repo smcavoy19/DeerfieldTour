@@ -188,6 +188,7 @@
                     <navigationItem key="navigationItem" title="The Boyden Library" id="4mx-d6-m37"/>
                     <connections>
                         <outlet property="buildingHeader" destination="4mx-d6-m37" id="sEN-tu-1XR"/>
+                        <outlet property="imageView" destination="Cgc-9l-E5m" id="HcE-oT-78r"/>
                         <outlet property="summary" destination="9j8-YU-Yev" id="N6n-lF-fLK"/>
                     </connections>
                 </viewController>

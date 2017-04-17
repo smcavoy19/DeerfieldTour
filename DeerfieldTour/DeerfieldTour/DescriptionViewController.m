@@ -27,6 +27,8 @@
     NSString* thePath = [[NSBundle mainBundle] pathForResource:filename ofType:@"plist"];
     NSMutableDictionary *copy = [NSMutableDictionary dictionaryWithContentsOfFile:thePath];
     [[self summary] setText: [copy objectForKey:self.building]];
+    UIImage *image = [UIImage imageNamed: @"Main School Building.png"];
+    [self.imageView setImage:image];
 }
 
 - (void)didReceiveMemoryWarning {
