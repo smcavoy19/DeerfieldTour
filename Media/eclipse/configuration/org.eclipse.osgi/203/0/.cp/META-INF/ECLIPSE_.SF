@@ -1,0 +1,49 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: sM6/bNyGFlHmehMF6lXyW64pXLs=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: tdndBMrAx6DUEoaAjPaEoV0gUdQ=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestListener$Assump
+ tionFailedTestIdentifier.class
+SHA1-Digest: gU+3bi4f0MNkejyqLc8x+YHpOMA=
+
+Name: .api_description
+SHA1-Digest: DWv59u3hFqK4toghTK8J5XJa90Y=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestReference$1.cla
+ ss
+SHA1-Digest: RDkqNvZxe1H3StYB/BMArnXnHLM=
+
+Name: about.html
+SHA1-Digest: M+fykt9heyWoEv1LNiIEeBhi/2Q=
+
+Name: plugin.properties
+SHA1-Digest: BBvULVX3EI560aBVyUl1PwMMhbw=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestClassReference.
+ class
+SHA1-Digest: uPmnMEKPd4vwr9ZG0fV5b1qkw2A=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestLoader.class
+SHA1-Digest: YPWpp0Ov1JZiiA8kWjVP3LD1wEo=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestListener.class
+SHA1-Digest: jTCtqmAdGtqICkbTnzVKCwjX/JA=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4Identifier.class
+SHA1-Digest: rNFu99IC6D0wtPs5QxZ4Bvx/X+U=
+
+Name: org/eclipse/jdt/internal/junit4/runner/FailuresFirstSorter.class
+SHA1-Digest: WwkDRUP5rDwxtHb4FO6WI46cRi0=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestMethodReference
+ .class
+SHA1-Digest: 0Ri7Xuw6HX6LvXIp0D1N0Dh05io=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestReference.class
+SHA1-Digest: /5506xTCGewhKB6+eHw4EiUA1QM=
+
+Name: org/eclipse/jdt/internal/junit4/runner/JUnit4TestListener$Ignore
+ dTestIdentifier.class
+SHA1-Digest: Z1NuAIyfQWpSt1CreG1JXBnLwXc=
+

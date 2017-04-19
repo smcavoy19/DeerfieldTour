@@ -1,0 +1,383 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Built-By: genie.technology.recommenders
+Bundle-SymbolicName: org.eclipse.recommenders.rcp;singleton:=true
+Eclipse-SourceReferences: scm:git:http://git.eclipse.org/gitroot/recom
+ menders/org.eclipse.recommenders.git;path="plugins/org.eclipse.recomm
+ enders.rcp";commitId=8d7b0acb1a8f8b25f49897ce55f0ae20d6ce241b
+Bundle-Activator: org.eclipse.recommenders.internal.rcp.RcpPlugin
+Require-Bundle: org.eclipse.core.databinding,org.eclipse.core.resource
+ s,org.eclipse.core.runtime,org.eclipse.e4.core.contexts,org.eclipse.e
+ 4.core.di.extensions,org.eclipse.e4.core.di,org.eclipse.jdt.core,org.
+ eclipse.jdt.ui,org.eclipse.jface.text,org.eclipse.recommenders.inject
+ ion;bundle-version="2.0.0",org.eclipse.recommenders.utils;bundle-vers
+ ion="2.0.0",org.eclipse.ui,org.eclipse.ui.editors
+Export-Package: org.eclipse.recommenders.internal.rcp;x-friends:="org.
+ eclipse.recommenders.rcp.tests",org.eclipse.recommenders.rcp;uses:="c
+ om.google.common.base",org.eclipse.recommenders.rcp.utils; uses:="com
+ .google.common.base"
+Bundle-Version: 2.1.0.v20140610-1852
+Build-Jdk: 1.7.0_51
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Name: %Bundle-Name
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Import-Package: com.google.common.annotations;version="[15.0.0,16.0.0)
+ ",com.google.common.base;version="[15.0.0,16.0.0)",com.google.common.
+ cache;version="[15.0.0,16.0.0)",com.google.common.collect;version="[1
+ 5.0.0,16.0.0)",com.google.common.eventbus;version="[15.0.0,16.0.0)",c
+ om.google.common.util.concurrent;version="[15.0.0,16.0.0)",org.apache
+ .commons.lang3;version="[3.0.0,4.0.0)",org.apache.commons.lang3.build
+ er;version="[3.0.0,4.0.0)",org.slf4j;version="[1.6.0,2.0.0)"
+Bundle-ManifestVersion: 2
+
+Name: about.ini
+SHA1-Digest: 3VGcL1eHBcpVU+gMQGCyOLPB19s=
+
+Name: org/eclipse/recommenders/rcp/utils/Jobs$SequentialSchedulingRule
+ .class
+SHA1-Digest: dZM/y2CxDifg1Swkz5i0EAhylVQ=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents.class
+SHA1-Digest: C0VimonhICBU6BvlFGTarVNrz+s=
+
+Name: icons/obj16/repository.gif
+SHA1-Digest: dSxIxy/Fb1G3k40Cwlk5/z9l9oo=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$CompilationUnitDelt
+ aEvent.class
+SHA1-Digest: vRwhu7iwi4xe4HOjRhCuNImntRw=
+
+Name: org/eclipse/recommenders/rcp/utils/PartListener2Adapter.class
+SHA1-Digest: J0vrhZ5tRsVjxYFiW1G4f3Tl+Gk=
+
+Name: org/eclipse/recommenders/rcp/utils/ContentAssistEnablementBlock.
+ class
+SHA1-Digest: GpOieMlm0jnLs08cO8zUP5PYSJI=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$Listener$1.class
+SHA1-Digest: 6KloUXKgf506NWjDFTOcY5ani90=
+
+Name: org/eclipse/recommenders/rcp/utils/CompilerBindings.class
+SHA1-Digest: fumTOU2xhFCTBy3KW8KvMDLk0bI=
+
+Name: META-INF/maven/org.eclipse.recommenders/org.eclipse.recommenders
+ .rcp/pom.properties
+SHA1-Digest: q/4FeGOhbnOq7IvuUP0I7hQRB38=
+
+Name: icons/obj16/bullet_yellow.png
+SHA1-Digest: A+5LCuqKwVw0Df8GpbUTB20zRtI=
+
+Name: org/eclipse/recommenders/internal/rcp/RootPreferencePage.class
+SHA1-Digest: Eyil7taByJRepTkMfGKwp2yaQls=
+
+Name: icons/elcl16/delete.gif
+SHA1-Digest: ORJe0sG1BDPf20zkd9DI+HUjfk8=
+
+Name: org/eclipse/recommenders/rcp/utils/ASTNodeUtils$Finder.class
+SHA1-Digest: 4QXSXfOXQ9VfpaIbmhE/TVQP6sU=
+
+Name: org/eclipse/recommenders/rcp/SharedImages$ImageResource.class
+SHA1-Digest: JV+Oew0JaNMrbnqVDp5hcWqNkyk=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$3.class
+SHA1-Digest: ERfP9baCHwtCZkx5qdms8L41vRE=
+
+Name: org/eclipse/recommenders/rcp/utils/ASTNodeUtils.class
+SHA1-Digest: YZ3nu4smdGBIIo0D/A9Az+icchw=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaElementSelections.clas
+ s
+SHA1-Digest: hB7eC2pdLQXCEgNxpa5YlgaNje8=
+
+Name: icons/about/48x48.png
+SHA1-Digest: MUomg02Fn8Qbk8DVd193L4jZA+o=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$Helper.class
+SHA1-Digest: wo6md50AOqxwHMdBRl8QRd0O0Xk=
+
+Name: icons/obj16/bullet_star.png
+SHA1-Digest: dn5qnqMsl+fzqz+EL9tbO2Wr9Xg=
+
+Name: icons/README.txt
+SHA1-Digest: Fq11ivStfKfKVI8BfDKsQk2N3Gc=
+
+Name: org/eclipse/recommenders/rcp/IRcpService.class
+SHA1-Digest: b1cZDnVND3GbbNWot33o5mA5PFQ=
+
+Name: org/eclipse/recommenders/rcp/utils/ASTStringUtils.class
+SHA1-Digest: Nul2y7E7U22msOLvR0pdDuV1xCQ=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$CompilationUnitRemo
+ ved.class
+SHA1-Digest: qaI4dQtMu/iJ7pMkHKAguG8UJ3o=
+
+Name: icons/obj16/bullet_blue.png
+SHA1-Digest: OC47nuUCjmhEMCl1stN+mx1kNP8=
+
+Name: META-INF/maven/org.eclipse.recommenders/org.eclipse.recommenders
+ .rcp/pom.xml
+SHA1-Digest: CeqJpe4L8gy1IxjmUf7PthikLuI=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaModelEventsService.cla
+ ss
+SHA1-Digest: CByr3cRwiuVlht60klhHzCYXPuM=
+
+Name: icons/about/32x32.png
+SHA1-Digest: LDMFTVcK2KIWA1FdBr+12A712XE=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaElementSelectionServic
+ e.class
+SHA1-Digest: Z7IrXaaCi+qsTVh0OlJ0c/gaIlo=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$RcpServiceMatche
+ r.class
+SHA1-Digest: um0rLNHOEtqz6XH1N9qcLK3awNQ=
+
+Name: org/eclipse/recommenders/rcp/utils/Jobs.class
+SHA1-Digest: M12i+PAiQm41ky9gMulTRPgFmtc=
+
+Name: org/eclipse/recommenders/rcp/utils/ContentAssistEnablementBlock$
+ 1.class
+SHA1-Digest: qYWNjrM5jKZkD0DTAOLRO2rRAjo=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$Listener$1$1.cla
+ ss
+SHA1-Digest: tLQU0SYTD4JydYgKsd+HJF0zIDc=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$JavaProjectClosed.c
+ lass
+SHA1-Digest: izCluP1bKoPpCMQOX7YNrzpztzU=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$JarPackageFragmentR
+ ootAdded.class
+SHA1-Digest: UVHN15IOG6+4x0s08Wbkf3jmcTs=
+
+Name: org/eclipse/recommenders/rcp/SharedImages.class
+SHA1-Digest: sLwD2KxA2vz5QmoLZCQ1S3R8NPs=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaElementSelectionServic
+ e$1.class
+SHA1-Digest: VL7/tRG4UP7NxpsyX+6YSzN69ic=
+
+Name: about.html
+SHA1-Digest: sAXgWZYB7tT9O9w6pl6VraWFVhk=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpPlugin.class
+SHA1-Digest: vhYICUE+i+kW20vpIv8wL8LYick=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$4.class
+SHA1-Digest: 5f2HT6l4TaDLQZrJ/u0bhRdBKVM=
+
+Name: icons/elcl16/synced.gif
+SHA1-Digest: Ghj9SQaJ6vJj8hRCpmwiAfHF1uI=
+
+Name: icons/view16/slice.gif
+SHA1-Digest: DGvOz5o+OVOvFtAqvyDpDuoATgU=
+
+Name: icons/ovr16/star.png
+SHA1-Digest: VirX3DTOTOOzIMVL8nw33GzURF4=
+
+Name: icons/elcl16/refresh_tab.gif
+SHA1-Digest: a/JWLTuIJexJMBSwYguHFfsmJjA=
+
+Name: org/eclipse/recommenders/internal/rcp/PreferenceLinkDialog$1.cla
+ ss
+SHA1-Digest: Ngmm5ERiyKzJvms0a2Mb42W4/dQ=
+
+Name: org/eclipse/recommenders/rcp/SharedImages$Images.class
+SHA1-Digest: +hH+ToSRAtQ/PB8VDpXH7YRCUrI=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$JarPackageFragmentR
+ ootRemoved.class
+SHA1-Digest: UroQdgv6jBLlBlhG+oU/g/Ua2C4=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$Listener.class
+SHA1-Digest: 1sTZKFB0/jsX8CMjjzrbI5expLg=
+
+Name: icons/obj16/project.gif
+SHA1-Digest: 838NPPH8ii9hkW/xanvs0/jBHN4=
+
+Name: org/eclipse/recommenders/rcp/JavaElementResolver.class
+SHA1-Digest: N8kBx6z3pvITxg7Nlo3QwLVwWwg=
+
+Name: icons/obj16/tick_small.png
+SHA1-Digest: w4U2Cbr+Jt+wAmK1o+nYXBViTtE=
+
+Name: org/eclipse/recommenders/internal/rcp/Constants.class
+SHA1-Digest: taxFHqJytRB1vtH0/1LNqgudsYg=
+
+Name: icons/obj16/jar.gif
+SHA1-Digest: gaxhmXCc42P8IH7O+DrlGM4E29Q=
+
+Name: icons/obj16/jre.gif
+SHA1-Digest: nkL22+4kbPDTI1ASDZhct7YaLXQ=
+
+Name: icons/obj16/lightbulb.gif
+SHA1-Digest: cNx4UEcMlPw3sGte3iMN32OKwCE=
+
+Name: icons/obj16/cross_small.png
+SHA1-Digest: yqLxoINwJX29ZoHGcPA07GyR9ag=
+
+Name: org/eclipse/recommenders/rcp/utils/RCPUtils.class
+SHA1-Digest: sRK405JFBgSn+YGEaWYbl2JZXCs=
+
+Name: org/eclipse/recommenders/rcp/utils/ObjectToBooleanConverter.clas
+ s
+SHA1-Digest: ZcCKWDCsdiXTuQC0egPnoyypZK0=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$CompilationUnitChan
+ ged.class
+SHA1-Digest: qz4bSeHjVpIvRmM0W5xYFxmG268=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils.class
+SHA1-Digest: Fiq7BKKtyE7P7p4o8GxFMi2g9WA=
+
+Name: icons/elcl16/add_repository.gif
+SHA1-Digest: HR/VEPZNmhAj6ALvxl19f0YiCT0=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$JavaProjectOpened.c
+ lass
+SHA1-Digest: h3iGUuM5SRuHiZul5By0P2MEOuE=
+
+Name: org/eclipse/recommenders/internal/rcp/messages.properties
+SHA1-Digest: hy4az2+0KyPzQyyP1pqcCObP11U=
+
+Name: intro/overview.properties
+SHA1-Digest: lDrm8/jL+Dd49V4mwAdNpvNUpN0=
+
+Name: icons/elcl16/collapseall.gif
+SHA1-Digest: X2SYkCGSP2jr+iOlYBLU19jEd4Y=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$CompilationUnitAdde
+ d.class
+SHA1-Digest: OTM+J7u5JrCSOvbVLL6l4p9YQwQ=
+
+Name: org/eclipse/recommenders/rcp/utils/MethodDeclarationFinder.class
+SHA1-Digest: rlQXDARbFBZAsfs4DkT7i+c5zdc=
+
+Name: icons/obj16/bullet_green.png
+SHA1-Digest: l97aXwQdFsIZXktNtt2nm4VSoXM=
+
+Name: org/eclipse/recommenders/rcp/utils/TableSortConfigurator.class
+SHA1-Digest: HgvZpMQMKmlPioZ4gHuKSY3XJN0=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$1.class
+SHA1-Digest: +wA+T11tfJQ8wXEwvxvOtb5fFs8=
+
+Name: org/eclipse/recommenders/rcp/utils/Selections.class
+SHA1-Digest: +mofN3If2Z7T1yPLANi3+eR0Q1U=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$5.class
+SHA1-Digest: CILHHOTguS53yHtDqmDat9WcZwA=
+
+Name: org/eclipse/recommenders/rcp/utils/MethodDeclarationFinder$1.cla
+ ss
+SHA1-Digest: jffPWhagTVZX3P/1wwAZQWkG1z0=
+
+Name: org/eclipse/recommenders/rcp/utils/AstBindings.class
+SHA1-Digest: SIQlYnDVJGxdvpTOuQ4IA3RknGQ=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaModelEventsService$Sim
+ ulateOpenJavaProjectsJob.class
+SHA1-Digest: +LGITluFXCSWOCHO1RrI8N8qcGY=
+
+Name: org/eclipse/recommenders/rcp/utils/UUIDs.class
+SHA1-Digest: uTc+odyO6jU4SzfqO6LYVh8vCKg=
+
+Name: org/eclipse/recommenders/rcp/utils/ASTNodeUtils$1.class
+SHA1-Digest: 3xd3bdA2o7UpdbmYaUS5rsaI/Kw=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: p5jx+XdsQRAJlRaHf4lDqAgDr80=
+
+Name: org/eclipse/recommenders/internal/rcp/JavaElementSelections$1.cl
+ ass
+SHA1-Digest: o1xHDT9rXWodOFdq73TNKH3If94=
+
+Name: org/eclipse/recommenders/rcp/utils/TableComparator.class
+SHA1-Digest: PEFO0+2EfzIoJVOBLbIHDjiml88=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$ActivePageFinder
+ .class
+SHA1-Digest: PgR7QGc2PJwhCiSk7hA1uLtKNig=
+
+Name: org/eclipse/recommenders/rcp/utils/PreferencesHelper.class
+SHA1-Digest: +F8T1FHiuzqldZM/H2RQa1Xk0+4=
+
+Name: intro/overview.css
+SHA1-Digest: koRE0lS+gbwlxP1bwKZY5CvRaec=
+
+Name: org/eclipse/recommenders/rcp/JavaElementResolver$1.class
+SHA1-Digest: JxG3F0cz2ciFXoaoMfRAwyavz2I=
+
+Name: org/eclipse/recommenders/rcp/IAstProvider.class
+SHA1-Digest: txwo5bZT+tMhlWz8BGN4mCaliaM=
+
+Name: icons/elcl16/expandall.gif
+SHA1-Digest: ommglZy4GtHYGZule0b8qVRNZSQ=
+
+Name: plugin.xml
+SHA1-Digest: Bn1g8c/sgFNdC69mFek8K+KLGCk=
+
+Name: icons/obj16/bullet_orange.png
+SHA1-Digest: 0NKPKXWPQVaBJE/AxfrY1gDIr+U=
+
+Name: icons/elcl16/clear.gif
+SHA1-Digest: +t8/f2vNMeMGz3NcpdPCXlgSjzQ=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule.class
+SHA1-Digest: 0zn6dUbD2qgt6iaeYgdkH3+HYf8=
+
+Name: intro/overview.xml
+SHA1-Digest: seJl3wuyqVv9BdglNmLHRzZs9+0=
+
+Name: org/eclipse/recommenders/internal/rcp/Messages.class
+SHA1-Digest: SSBTMfIP557++YT/FqYy0PJ0R8M=
+
+Name: org/eclipse/recommenders/rcp/utils/RCPUtils$1.class
+SHA1-Digest: 0PxVWSWbR5s4sd2FeiFc09K971M=
+
+Name: org/eclipse/recommenders/rcp/utils/SelectionListener.class
+SHA1-Digest: p/fQ54nsTBmfoesL5B5yI1uGenM=
+
+Name: org/eclipse/recommenders/rcp/utils/TimeDelimitedProgressMonitor.
+ class
+SHA1-Digest: QO7bntNtc5dnUJf38dfJk21y0mI=
+
+Name: org/eclipse/recommenders/internal/rcp/CachingAstProvider.class
+SHA1-Digest: Lts0YnwVHLbGWPbMgcr3YLU3Ud0=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$2.class
+SHA1-Digest: DeuCe4x9NkOhXGqmpZ0hfc5HlkA=
+
+Name: org/eclipse/recommenders/rcp/JavaElementSelectionEvent$JavaEleme
+ ntSelectionLocation.class
+SHA1-Digest: eOfMtxe/fs7x/MwwH1YVJMgA8K0=
+
+Name: org/eclipse/recommenders/rcp/JavaElementSelectionEvent.class
+SHA1-Digest: JAP/zOWy3TLzFAysKCvGUnp/kRE=
+
+Name: org/eclipse/recommenders/rcp/JavaModelEvents$CompilationUnitSave
+ d.class
+SHA1-Digest: 942Gyj2AVIq+JQxXA07K4FWOFLk=
+
+Name: org/eclipse/recommenders/internal/rcp/RcpModule$1.class
+SHA1-Digest: QvOf4Kg6NRSe5k3+GO5CeMk1THM=
+
+Name: org/eclipse/recommenders/rcp/utils/JdtUtils$6.class
+SHA1-Digest: l7tov9oYWYuhxyguNexH3s/t0tI=
+
+Name: icons/elcl16/remove_repository.gif
+SHA1-Digest: SEjNDH9LVDhEqySthiny8GQ7BWA=
+
+Name: org/eclipse/recommenders/internal/rcp/PreferenceLinkDialog.class
+SHA1-Digest: hr60496Cohko+nDTDa7Bw6GkZws=
+
+Name: icons/obj16/bullet_red.png
+SHA1-Digest: Z9UCepdQIKebmaCDmtfmxv2E5bc=
+
+Name: org/eclipse/recommenders/rcp/utils/Logs.class
+SHA1-Digest: rsrkakUPUtjkisEAZk6bWdnu/DM=
+

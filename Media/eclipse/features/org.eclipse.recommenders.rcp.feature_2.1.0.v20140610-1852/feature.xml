@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.recommenders.rcp.feature"
+      label="%label"
+      version="2.1.0.v20140610-1852"
+      provider-name="%provider-name"
+      plugin="org.eclipse.recommenders.rcp">
+
+   <description url="http://www.eclipse.org/recommenders/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <!-- These third-party bundles/fragments are not depended upon directly, but should nevertheless be installed. -->
+      <import plugin="ch.qos.logback.classic" version="1.0.7" match="compatible"/>
+      <import plugin="ch.qos.logback.core" version="1.0.7" match="compatible"/>
+      <import plugin="ch.qos.logback.slf4j" version="1.0.7" match="compatible"/>
+      <import plugin="com.google.inject.multibindings" version="3.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.recommenders.rcp"
+         download-size="137"
+         install-size="263"
+         version="2.1.0.v20140610-1852"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.apidocs"
+         download-size="26"
+         install-size="51"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.apidocs.rcp"
+         download-size="114"
+         install-size="240"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.calls"
+         download-size="24"
+         install-size="50"
+         version="2.1.0.v20140527-1146"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.calls.rcp"
+         download-size="73"
+         install-size="154"
+         version="2.1.0.v20140528-0741"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.chain.rcp"
+         download-size="53"
+         install-size="111"
+         version="2.1.0.v20140527-1146"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.completion.rcp"
+         download-size="168"
+         install-size="396"
+         version="2.1.0.v20140610-1533"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.injection"
+         download-size="15"
+         install-size="24"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.jayes"
+         download-size="93"
+         install-size="182"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.jayes.io"
+         download-size="40"
+         install-size="69"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.models"
+         download-size="84"
+         install-size="175"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.models.rcp"
+         download-size="176"
+         install-size="405"
+         version="2.1.0.v20140602-1202"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.overrides"
+         download-size="20"
+         install-size="36"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.overrides.rcp"
+         download-size="22"
+         install-size="39"
+         version="2.1.0.v20140526-1706"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.subwords.rcp"
+         download-size="31"
+         install-size="57"
+         version="2.1.0.v20140608-1213"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.recommenders.utils"
+         download-size="83"
+         install-size="163"
+         version="2.1.0.v20140527-1146"
+         unpack="false"/>
+
+</feature>

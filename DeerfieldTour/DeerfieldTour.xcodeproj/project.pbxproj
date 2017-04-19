@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */ = {isa = PBXBuildFile; fileRef = 161C81A11E8E839A008F9AE2 /* route_points.plist */; };
 		161C81A51E8E8628008F9AE2 /* MapRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 161C81A41E8E8628008F9AE2 /* MapRoute.m */; };
-		167592781EA4F30A008EE831 /* Main School Building.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592771EA4F30A008EE831 /* Main School Building.png */; };
+		1675927E1EA64564008EE831 /* Atheletic Center.png in Resources */ = {isa = PBXBuildFile; fileRef = 1675927D1EA64564008EE831 /* Atheletic Center.png */; };
+		167592821EA64577008EE831 /* Main School Building.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592811EA64577008EE831 /* Main School Building.png */; };
+		167592841EA645FE008EE831 /* The Koch Center.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592831EA645FE008EE831 /* The Koch Center.png */; };
+		167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592851EA6477C008EE831 /* Hess Center of the Arts.png */; };
 		169577F61E8A975F00EAC913 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577F51E8A975F00EAC913 /* main.m */; };
 		169577F91E8A975F00EAC913 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577F81E8A975F00EAC913 /* AppDelegate.m */; };
 		169577FC1E8A975F00EAC913 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577FB1E8A975F00EAC913 /* ViewController.m */; };
@@ -46,7 +49,10 @@
 		161C81A11E8E839A008F9AE2 /* route_points.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = route_points.plist; path = ../route_points.plist; sourceTree = "<group>"; };
 		161C81A31E8E8628008F9AE2 /* MapRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRoute.h; sourceTree = "<group>"; };
 		161C81A41E8E8628008F9AE2 /* MapRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRoute.m; sourceTree = "<group>"; };
-		167592771EA4F30A008EE831 /* Main School Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main School Building.png"; path = "../../../../Main School Building.png"; sourceTree = "<group>"; };
+		1675927D1EA64564008EE831 /* Atheletic Center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Atheletic Center.png"; path = "../../Media/Atheletic Center.png"; sourceTree = "<group>"; };
+		167592811EA64577008EE831 /* Main School Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main School Building.png"; path = "../../Media/Main School Building.png"; sourceTree = "<group>"; };
+		167592831EA645FE008EE831 /* The Koch Center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "The Koch Center.png"; path = "../../Media/The Koch Center.png"; sourceTree = "<group>"; };
+		167592851EA6477C008EE831 /* Hess Center of the Arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hess Center of the Arts.png"; path = "../../Media/Hess Center of the Arts.png"; sourceTree = "<group>"; };
 		169577F11E8A975F00EAC913 /* DeerfieldTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeerfieldTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169577F51E8A975F00EAC913 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		169577F71E8A975F00EAC913 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -207,8 +213,11 @@
 			isa = PBXGroup;
 			children = (
 				280539D51E93ECE000F0A18D /* map copy.png */,
-				167592771EA4F30A008EE831 /* Main School Building.png */,
+				167592851EA6477C008EE831 /* Hess Center of the Arts.png */,
 				28F076FA1E92754A00B7B7B4 /* Map-Pin.png */,
+				167592831EA645FE008EE831 /* The Koch Center.png */,
+				1675927D1EA64564008EE831 /* Atheletic Center.png */,
+				167592811EA64577008EE831 /* Main School Building.png */,
 				28233D511E8E84600060BAD9 /* info.png */,
 				28233D4F1E8E83C70060BAD9 /* close.png */,
 				28233D531E8E86C90060BAD9 /* campus.png */,
@@ -283,15 +292,18 @@
 				28233D521E8E84600060BAD9 /* info.png in Resources */,
 				28233D501E8E83C70060BAD9 /* close.png in Resources */,
 				16C51F3E1EA1BFD100EF3913 /* building_summaries.plist in Resources */,
-				167592781EA4F30A008EE831 /* Main School Building.png in Resources */,
 				28233D541E8E86C90060BAD9 /* campus.png in Resources */,
 				282049751E8BE88A007F6719 /* campus_image.png in Resources */,
 				169578041E8A975F00EAC913 /* LaunchScreen.storyboard in Resources */,
+				167592821EA64577008EE831 /* Main School Building.png in Resources */,
 				287D6AC41E8DE65F00A42BE4 /* map.png in Resources */,
 				169578011E8A975F00EAC913 /* Assets.xcassets in Resources */,
 				169577FF1E8A975F00EAC913 /* Main.storyboard in Resources */,
 				280539D61E93ECE000F0A18D /* map copy.png in Resources */,
+				167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */,
 				161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */,
+				1675927E1EA64564008EE831 /* Atheletic Center.png in Resources */,
+				167592841EA645FE008EE831 /* The Koch Center.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
