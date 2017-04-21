@@ -16,7 +16,7 @@
 #import "Campus.h"
 #import "BuildingAnnotationView.h"
 
-@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation, UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation, UITableViewDelegate, UITableViewDataSource,UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic) NSMutableArray *buildings;
@@ -31,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *startTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *endTextField;
 @property (weak, nonatomic) IBOutlet UIButton *directionButton;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
 
 @end
 

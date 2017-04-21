@@ -28,7 +28,7 @@
     NSMutableDictionary *copy = [NSMutableDictionary dictionaryWithContentsOfFile:thePath];
     [[self summary] setText: [copy objectForKey:self.building]];
     NSString* nameOfImage = [NSString stringWithFormat:@"%@.png",self.building];
-    UIImage *image = [UIImage imageNamed: @"Main School Building.png"];
+    UIImage *image = [UIImage imageNamed: nameOfImage];
     [self.imageView setImage:image];
 }
 

@@ -11,7 +11,10 @@
 #import "MapRoute.h"
 #import "DescriptionViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    NSMutableArray *_pickerData;
+    UITextField *_activeField;
+}
 
 @end
 
@@ -19,6 +22,47 @@
 
 @synthesize coordinate;
 @synthesize boundingMapRect;
+
+#pragma mark - Text Field Delegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    _activeField = textField;
+    self.picker.hidden = NO;
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+
+}
+
+#pragma mark - PickerView Delegate
+// The number of columns of data
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _pickerData.count;
+}
+
+// The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _pickerData[row];
+}
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    //Here, like the table view you can get the each section of each row if you've multiple sections
+    
+    [_activeField setText:[_pickerData objectAtIndex:row]];
+ 
+    
+}
+
 
 #pragma mark - UITableView Delegate
 
@@ -201,6 +245,7 @@
     MapRoute* mapRoute = [[MapRoute alloc] initWithFilename:@"route_points"];
     MKPolyline *route = [mapRoute routeStart:self.startTextfield.text toFinish:self.endTextField.text];
     [self.mapView addOverlay:route];
+    self.picker.hidden = YES;
 }
 
 -(void)clearPolyline{
@@ -222,6 +267,15 @@
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
+    // Initialize Data
+    _pickerData = [[NSMutableArray alloc] initWithObjects:@"MSB",@"Koch",@"Library",@"Hess", nil];
+    
+    self.picker.dataSource = self;
+    self.picker.delegate = self;
+    self.picker.hidden = YES;
+    
+    self.startTextfield.delegate = self;
+    self.endTextField.delegate = self;
     
     CLLocationDegrees lat = 42.54444;
     CLLocationDegrees lon =  -72.60611;
@@ -250,6 +304,8 @@
     
     [self segmentSelected:nil];
     [super viewDidLoad];
+ 
+
 }
 
 
