@@ -2,6 +2,42 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Dinning Hall</key>
+	<dict>
+		<key>connections</key>
+		<dict>
+			<key>Hess</key>
+			<integer>1</integer>
+			<key>point4</key>
+			<integer>0</integer>
+		</dict>
+		<key>coordinate</key>
+		<string>{42.544577, -72.606578}</string>
+	</dict>
+	<key>point4</key>
+	<dict>
+		<key>connections</key>
+		<dict>
+			<key>Dinning Hall</key>
+			<string>0</string>
+			<key>point3</key>
+			<integer>0</integer>
+		</dict>
+		<key>coordinate</key>
+		<string>{42.545146, -72.605822}</string>
+	</dict>
+	<key>point3</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.545107, -72.605067}</string>
+		<key>connections</key>
+		<dict>
+			<key>point4</key>
+			<integer>0</integer>
+			<key>MSB</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
 	<key>Koch</key>
 	<dict>
 		<key>coordinate</key>
@@ -62,6 +98,8 @@
 	<dict>
 		<key>connections</key>
 		<dict>
+			<key>Dinning Hall</key>
+			<integer>1</integer>
 			<key>Library</key>
 			<integer>0</integer>
 			<key>point2</key>
