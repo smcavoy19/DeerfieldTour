@@ -27,23 +27,15 @@
     NSString* thePath = [[NSBundle mainBundle] pathForResource:filename ofType:@"plist"];
     NSMutableDictionary *copy = [NSMutableDictionary dictionaryWithContentsOfFile:thePath];
     [[self summary] setText: [copy objectForKey:self.building]];
+    NSString* nameOfImage = [NSString stringWithFormat:@"%@.png",self.building];
     UIImage *image = [UIImage imageNamed: @"Main School Building.png"];
     [self.imageView setImage:image];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
