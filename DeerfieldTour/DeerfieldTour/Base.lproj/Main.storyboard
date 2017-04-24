@@ -125,7 +125,6 @@
                                     <constraint firstItem="2Ma-qF-tPG" firstAttribute="centerX" secondItem="M4N-0a-heD" secondAttribute="centerX" id="9nq-jF-QUR"/>
                                     <constraint firstItem="fpa-pr-qvZ" firstAttribute="top" secondItem="M4N-0a-heD" secondAttribute="top" constant="8" id="BH1-qg-2RQ"/>
                                     <constraint firstItem="PaX-LR-fDR" firstAttribute="leading" secondItem="M4N-0a-heD" secondAttribute="leading" id="C32-Q6-Mbl"/>
-                                    <constraint firstAttribute="bottom" secondItem="ux1-YX-6W5" secondAttribute="bottom" id="EZG-Gc-lvm"/>
                                     <constraint firstAttribute="bottom" secondItem="2Ma-qF-tPG" secondAttribute="bottom" constant="22" id="Ff9-nC-WWD"/>
                                     <constraint firstItem="fpa-pr-qvZ" firstAttribute="leading" secondItem="M4N-0a-heD" secondAttribute="leading" constant="8" id="Hed-i9-iV8"/>
                                     <constraint firstAttribute="trailing" secondItem="ux1-YX-6W5" secondAttribute="trailing" id="NUc-GH-I3v"/>
@@ -136,17 +135,24 @@
                                     <constraint firstItem="xSb-r5-wDy" firstAttribute="leading" secondItem="M4N-0a-heD" secondAttribute="leading" constant="8" id="Vz1-M4-AUI"/>
                                     <constraint firstItem="9FO-eb-Vga" firstAttribute="top" secondItem="Xfl-LC-cJx" secondAttribute="bottom" constant="12" id="a6h-oX-jY2"/>
                                     <constraint firstAttribute="trailing" secondItem="wDx-ox-VnZ" secondAttribute="trailing" constant="8" id="f5E-qh-pD7"/>
-                                    <constraint firstAttribute="bottom" secondItem="ux1-YX-6W5" secondAttribute="bottom" id="hLw-8t-Z1I"/>
                                     <constraint firstItem="9FO-eb-Vga" firstAttribute="leading" secondItem="M4N-0a-heD" secondAttribute="leading" constant="8" id="hjf-Qc-YAH"/>
                                     <constraint firstAttribute="trailing" secondItem="9FO-eb-Vga" secondAttribute="trailing" constant="8" id="lsZ-4T-v4d"/>
+                                    <constraint firstAttribute="bottom" secondItem="ux1-YX-6W5" secondAttribute="bottom" id="sly-lr-dX6"/>
                                     <constraint firstItem="Xfl-LC-cJx" firstAttribute="top" secondItem="fpa-pr-qvZ" secondAttribute="bottom" constant="8" id="tFy-Uz-YhO"/>
                                     <constraint firstAttribute="trailing" secondItem="Xfl-LC-cJx" secondAttribute="trailing" constant="8" id="ucA-xY-2Mo"/>
                                     <constraint firstAttribute="trailing" secondItem="PaX-LR-fDR" secondAttribute="trailing" id="xUx-Gc-f9T"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbg-rd-NEJ">
-                                <rect key="frame" x="164" y="258" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbg-rd-NEJ">
+                                <rect key="frame" x="170" y="258" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5fc-qS-DEv"/>
+                                    <constraint firstAttribute="width" constant="35" id="uhs-nz-BmF"/>
+                                </constraints>
+                                <state key="normal" image="up.png"/>
+                                <connections>
+                                    <action selector="changeSize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFB-1k-XfG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,8 +176,10 @@
                         <outlet property="endTextField" destination="9FO-eb-Vga" id="lhK-zb-LsG"/>
                         <outlet property="mapTypeSegmentedControl" destination="2Ma-qF-tPG" id="Bk0-vI-UgP"/>
                         <outlet property="mapView" destination="lFw-qW-gz5" id="tGR-uL-fYz"/>
+                        <outlet property="masterView" destination="M4N-0a-heD" id="SKV-yX-8Lf"/>
                         <outlet property="picker" destination="PaX-LR-fDR" id="C4H-L7-Mrw"/>
                         <outlet property="segmentedControl" destination="fpa-pr-qvZ" id="eAp-o0-Wro"/>
+                        <outlet property="sizeButton" destination="Qbg-rd-NEJ" id="f2b-J5-MMh"/>
                         <outlet property="startTextfield" destination="Xfl-LC-cJx" id="Luc-6n-z6M"/>
                         <outlet property="table" destination="ux1-YX-6W5" id="2Pc-aO-sbM"/>
                         <outlet property="tableHeight" destination="6ai-MU-EVc" id="Uzi-ip-4Yc"/>
@@ -257,4 +265,7 @@
             <point key="canvasLocation" x="-26" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="up.png" width="100" height="100"/>
+    </resources>
 </document>

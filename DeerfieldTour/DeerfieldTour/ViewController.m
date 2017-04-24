@@ -162,6 +162,24 @@
 
 #pragma mark - Private
 
+- (IBAction)changeSize:(id)sender {
+    
+    if (self.masterView.alpha == 0) {
+        [self segmentSelected:nil];
+        self.masterView.alpha = 1;
+        [self.sizeButton setImage:[UIImage imageNamed:@"up.png"] forState:UIControlStateNormal];
+        [self.sizeButton setImage:[UIImage imageNamed:@"up.png"] forState:UIControlStateSelected];
+    }else {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.tableHeight.constant = 10;
+            self.masterView.alpha = 0;
+            [self.view layoutIfNeeded];
+        }];
+        [self.sizeButton setImage:[UIImage imageNamed:@"down.png"] forState:UIControlStateNormal];
+        [self.sizeButton setImage:[UIImage imageNamed:@"down.png"] forState:UIControlStateSelected];
+    }
+}
+
 - (IBAction)clearRoute:(id)sender {
     for (MapOverlay *overlay in self.mapView.overlays) {
         if ([overlay isKindOfClass:[MKPolyline class]])

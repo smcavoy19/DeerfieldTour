@@ -23,10 +23,12 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) Campus *campus;
 
+@property (weak, nonatomic) IBOutlet UIView *masterView;
 @property (weak, nonatomic) IBOutlet UITableView *table;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mapTypeSegmentedControl;
+@property (weak, nonatomic) IBOutlet UIButton *sizeButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableHeight;
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UITableView *vicinityTable;

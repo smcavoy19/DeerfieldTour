@@ -90,6 +90,7 @@
 		28E6822E1EADCBE300B9824A /* UIFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682021EADCBE300B9824A /* UIFontHelper.m */; };
 		28E6822F1EADCBE300B9824A /* UIView+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682041EADCBE300B9824A /* UIView+MDExtension.m */; };
 		28E682301EADCBE300B9824A /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682061EADCBE300B9824A /* UIViewHelper.m */; };
+		28E682331EADCE9F00B9824A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E682321EADCE9F00B9824A /* Media.xcassets */; };
 		28F076FB1E92754A00B7B7B4 /* Map-Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F076FA1E92754A00B7B7B4 /* Map-Pin.png */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +236,7 @@
 		28E682041EADCBE300B9824A /* UIView+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDExtension.m"; path = "MaterialControls/UIView+MDExtension.m"; sourceTree = "<group>"; };
 		28E682051EADCBE300B9824A /* UIViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewHelper.h; path = MaterialControls/UIViewHelper.h; sourceTree = "<group>"; };
 		28E682061EADCBE300B9824A /* UIViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewHelper.m; path = MaterialControls/UIViewHelper.m; sourceTree = "<group>"; };
+		28E682321EADCE9F00B9824A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		28F076FA1E92754A00B7B7B4 /* Map-Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map-Pin.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,6 +311,7 @@
 		169577F41E8A975F00EAC913 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28E682321EADCE9F00B9824A /* Media.xcassets */,
 				169578001E8A975F00EAC913 /* Assets.xcassets */,
 				169578021E8A975F00EAC913 /* LaunchScreen.storyboard */,
 				161C81A11E8E839A008F9AE2 /* route_points.plist */,
@@ -529,6 +532,7 @@
 				282049641E8BE7A9007F6719 /* boundaries.plist in Resources */,
 				28233D521E8E84600060BAD9 /* info.png in Resources */,
 				28233D501E8E83C70060BAD9 /* close.png in Resources */,
+				28E682331EADCE9F00B9824A /* Media.xcassets in Resources */,
 				16C51F3E1EA1BFD100EF3913 /* building_summaries.plist in Resources */,
 				2828AE841EADA89800F071EA /* up.png in Resources */,
 				28233D541E8E86C90060BAD9 /* campus.png in Resources */,
