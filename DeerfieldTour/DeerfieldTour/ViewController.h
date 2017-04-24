@@ -15,6 +15,7 @@
 #import "MapOverlayView.h"
 #import "Campus.h"
 #import "BuildingAnnotationView.h"
+#import "PolylineRender.h"
 
 @interface ViewController : UIViewController <MKOverlay, MKMapViewDelegate, CLLocationManagerDelegate, MKAnnotation, UITableViewDelegate, UITableViewDataSource,UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate>
 

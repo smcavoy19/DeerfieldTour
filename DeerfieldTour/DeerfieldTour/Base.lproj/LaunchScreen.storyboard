@@ -34,9 +34,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tour_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rYf-dF-FUD">
+                                <rect key="frame" x="87" y="77" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Shl-wJ-j7t"/>
+                                    <constraint firstAttribute="height" constant="200" id="Y3N-Ic-1FJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dyk-Li-5VQ" firstAttribute="top" secondItem="rYf-dF-FUD" secondAttribute="bottom" constant="8" id="HwK-Ub-Y6c"/>
+                            <constraint firstItem="rYf-dF-FUD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="I4g-et-VPT"/>
                             <constraint firstItem="q8v-pb-gEA" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Jg2-Rb-hqg"/>
                             <constraint firstItem="dyk-Li-5VQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="LFU-R2-RQM"/>
                             <constraint firstItem="q8v-pb-gEA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="MEF-J0-zdV"/>
@@ -51,4 +60,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tour_icon.png" width="1024" height="1024"/>
+    </resources>
 </document>

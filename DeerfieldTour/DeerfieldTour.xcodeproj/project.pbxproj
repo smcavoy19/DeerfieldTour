@@ -43,6 +43,8 @@
 		2828AE831EADA89800F071EA /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2828AE811EADA89800F071EA /* down.png */; };
 		2828AE841EADA89800F071EA /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 2828AE821EADA89800F071EA /* up.png */; };
 		287D6AC41E8DE65F00A42BE4 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 287D6AC31E8DE65F00A42BE4 /* map.png */; };
+		28C63C5F1EADE6DD00C54B00 /* tour_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C63C5E1EADE6DD00C54B00 /* tour_icon.png */; };
+		28C63C621EADE95900C54B00 /* PolylineRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C63C611EADE95900C54B00 /* PolylineRender.m */; };
 		28CB15E21E8CB21400513304 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB15E11E8CB21400513304 /* Campus.m */; };
 		28CC1A511EA0763700290DD2 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4C1EA0763700290DD2 /* Graph.m */; };
 		28CC1A521EA0763700290DD2 /* Heap.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4E1EA0763700290DD2 /* Heap.m */; };
@@ -141,6 +143,9 @@
 		2828AE811EADA89800F071EA /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		2828AE821EADA89800F071EA /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		287D6AC31E8DE65F00A42BE4 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		28C63C5E1EADE6DD00C54B00 /* tour_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour_icon.png; sourceTree = "<group>"; };
+		28C63C601EADE95900C54B00 /* PolylineRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolylineRender.h; sourceTree = "<group>"; };
+		28C63C611EADE95900C54B00 /* PolylineRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolylineRender.m; sourceTree = "<group>"; };
 		28CB15E01E8CB21400513304 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		28CB15E11E8CB21400513304 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
 		28CC1A4B1EA0763700290DD2 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
@@ -268,6 +273,8 @@
 				28CC1A501EA0763700290DD2 /* PQ.m */,
 				161C81A31E8E8628008F9AE2 /* MapRoute.h */,
 				161C81A41E8E8628008F9AE2 /* MapRoute.m */,
+				28C63C601EADE95900C54B00 /* PolylineRender.h */,
+				28C63C611EADE95900C54B00 /* PolylineRender.m */,
 			);
 			name = MapRoute;
 			sourceTree = "<group>";
@@ -355,6 +362,7 @@
 		282049761E8BE890007F6719 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				28C63C5E1EADE6DD00C54B00 /* tour_icon.png */,
 				2828AE811EADA89800F071EA /* down.png */,
 				2828AE821EADA89800F071EA /* up.png */,
 				280539D51E93ECE000F0A18D /* map copy.png */,
@@ -551,6 +559,7 @@
 				2828AE831EADA89800F071EA /* down.png in Resources */,
 				167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */,
 				161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */,
+				28C63C5F1EADE6DD00C54B00 /* tour_icon.png in Resources */,
 				167592841EA645FE008EE831 /* The Koch Center.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +608,7 @@
 				28E682161EADCBE300B9824A /* MDLinearProgressLayer.m in Sources */,
 				28E6820A1EADCBE300B9824A /* MDButton.m in Sources */,
 				28E682281EADCBE300B9824A /* MDToast.m in Sources */,
+				28C63C621EADE95900C54B00 /* PolylineRender.m in Sources */,
 				28CC1A531EA0763700290DD2 /* PQ.m in Sources */,
 				28E6820E1EADCBE300B9824A /* MDCalendarHeader.m in Sources */,
 				28E6822E1EADCBE300B9824A /* UIFontHelper.m in Sources */,

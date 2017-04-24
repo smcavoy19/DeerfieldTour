@@ -28,7 +28,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="LjX-PO-wVT"/>
                                 </connections>
                             </mapView>
-                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4N-0a-heD">
+                            <view alpha="0.88" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4N-0a-heD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ux1-YX-6W5">
@@ -245,7 +245,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lhv-6E-6c6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="dsp-Vh-xPM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dsp-Vh-xPM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

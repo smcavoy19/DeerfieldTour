@@ -106,6 +106,7 @@
         pointsInRoute[i] = [(CLLocation *)[array objectAtIndex:i] coordinate];
     }
     MKPolyline *myPolyline = [MKPolyline polylineWithCoordinates:pointsInRoute count:[array count]];
+    
     return myPolyline;
 }
 

@@ -147,16 +147,14 @@
     
     if ([overlay isKindOfClass:MapOverlay.class]) {
         MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map copy.png"]];
-
         return overlayView;
     } else if ([overlay isKindOfClass:MKPolyline.class]) {
         MKPolylineRenderer *lineView = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-        lineView.strokeColor = [UIColor redColor];
-        lineView.lineWidth = 1.0;
+        lineView.strokeColor = [UIColor blueColor];
+        lineView.lineWidth = 4.5;
         
         return lineView;
     }
-    
     return nil;
 }
 
@@ -278,7 +276,6 @@
     
     // Initialize Data
     _pickerData = [[NSMutableArray alloc] initWithObjects:@"MSB",@"Koch",@"Library",@"Hess",@"Arms",@"Dining Hall",@"Athletic Center",@"Athletic Fields",@"Language Building", nil];
-    
     self.picker.dataSource = self;
     self.picker.delegate = self;
     self.picker.hidden = YES;

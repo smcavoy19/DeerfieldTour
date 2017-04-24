@@ -20,7 +20,6 @@
 @property (strong, nonatomic) Graph *graph;
 @property (retain, nonatomic) id delegate;
 - (instancetype)initWithFilename:(NSString *)filename;
-- (MKPolyline*)addRoute:(CLLocation*) start toFinish:(CLLocation*) finish;
 - (float) distanceFrom:(CLLocation*) locationOfUser to:(CLLocation*) next;
 -(MKPolyline *) routeStart:(NSString*) start toFinish:(NSString*) finish;
 
