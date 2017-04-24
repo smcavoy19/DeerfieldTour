@@ -23,6 +23,7 @@
 @synthesize coordinate;
 @synthesize boundingMapRect;
 
+
 #pragma mark - Text Field Delegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
@@ -210,19 +211,22 @@
 }
 - (IBAction)segmentSelected:(id)sender {
     
-    if (self.segmentedControl.selectedSegmentIndex == 0) {
+    if (self.segmentedControl.selectedSegmentIndex == 0) {\
+        self.picker.hidden = YES;
         self.vicinityTable.hidden = NO;
         self.startTextfield.hidden = YES;
         self.endTextField.hidden = YES;
         self.directionButton.hidden = YES;
         self.mapTypeSegmentedControl.hidden = YES;
     }else if (self.segmentedControl.selectedSegmentIndex == 1) {
+        self.picker.hidden = NO;
         self.vicinityTable.hidden = YES;
         self.startTextfield.hidden = NO;
         self.endTextField.hidden = NO;
         self.directionButton.hidden = NO;
         self.mapTypeSegmentedControl.hidden = YES;
     }else{
+        self.picker.hidden = YES;
         self.vicinityTable.hidden = YES;
         self.startTextfield.hidden = YES;
         self.endTextField.hidden = YES;
@@ -258,7 +262,7 @@
 
 - (void)viewDidLoad {
     // Initialize Data
-    _pickerData = [[NSMutableArray alloc] initWithObjects:@"MSB",@"Koch",@"Library",@"Hess", nil];
+    _pickerData = [[NSMutableArray alloc] initWithObjects:@"MSB",@"Koch",@"Library",@"Hess",@"Arms",@"Dining Hall",@"Athletic Center",@"Athletic Fields",@"Language Building", nil];
     
     self.picker.dataSource = self;
     self.picker.delegate = self;
@@ -306,6 +310,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

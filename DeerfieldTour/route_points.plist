@@ -2,64 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Dinning Hall</key>
-	<dict>
-		<key>connections</key>
-		<dict>
-			<key>Hess</key>
-			<integer>1</integer>
-			<key>point4</key>
-			<integer>0</integer>
-		</dict>
-		<key>coordinate</key>
-		<string>{42.544577, -72.606578}</string>
-	</dict>
-	<key>point4</key>
-	<dict>
-		<key>connections</key>
-		<dict>
-			<key>Dinning Hall</key>
-			<string>0</string>
-			<key>point3</key>
-			<integer>0</integer>
-		</dict>
-		<key>coordinate</key>
-		<string>{42.545146, -72.605822}</string>
-	</dict>
-	<key>point3</key>
-	<dict>
-		<key>coordinate</key>
-		<string>{42.545107, -72.605067}</string>
-		<key>connections</key>
-		<dict>
-			<key>point4</key>
-			<integer>0</integer>
-			<key>MSB</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>Koch</key>
-	<dict>
-		<key>coordinate</key>
-		<string>{42.546863, -72.607861}</string>
-		<key>connections</key>
-		<dict>
-			<key>Library</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>Library</key>
-	<dict>
-		<key>connections</key>
-		<dict>
-			<key>Hess</key>
-			<integer>0</integer>
-			<key>Koch</key>
-			<integer>0</integer>
-		</dict>
-		<key>coordinate</key>
-		<string>{42.546792, -72.606834}</string>
-	</dict>
 	<key>MSB</key>
 	<dict>
 		<key>connections</key>
@@ -80,15 +22,87 @@
 			<integer>-1</integer>
 		</dict>
 		<key>coordinate</key>
-		<string>{42.545503, -72.604955}</string>
+		<string>{42.545506, -72.604870}</string>
 	</dict>
 	<key>point2</key>
 	<dict>
 		<key>coordinate</key>
-		<string>{42.546231, -72.605217}</string>
+		<string>{42.545768, -72.604788}</string>
 		<key>connections</key>
 		<dict>
 			<key>point1</key>
+			<integer>0</integer>
+			<key>point3</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point3</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546044, -72.604834}</string>
+		<key>connections</key>
+		<dict>
+			<key>point2</key>
+			<integer>0</integer>
+			<key>Language Building</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Language Building</key>
+	<dict>
+		<key>connections</key>
+		<dict>
+			<key>point5</key>
+			<integer>0</integer>
+			<key>point4</key>
+			<integer>0</integer>
+			<key>point3</key>
+			<integer>0</integer>
+		</dict>
+		<key>coordinate</key>
+		<string>{42.546222, -72.604976}</string>
+	</dict>
+	<key>Arms</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546074, -72.605217}</string>
+		<key>connections</key>
+		<dict>
+			<key>Language Building</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point4</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546301, -72.605172}</string>
+		<key>connections</key>
+		<dict>
+			<key>Language Building</key>
+			<integer>0</integer>
+			<key>point5</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point5</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546393, -72.605536}</string>
+		<key>connections</key>
+		<dict>
+			<key>point4</key>
+			<integer>0</integer>
+			<key>point6</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point6</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546294, -72.605563}</string>
+		<key>connections</key>
+		<dict>
+			<key>point5</key>
 			<integer>0</integer>
 			<key>Hess</key>
 			<integer>0</integer>
@@ -96,17 +110,169 @@
 	</dict>
 	<key>Hess</key>
 	<dict>
+		<key>coordinate</key>
+		<string>{42.546337, -72.605922}</string>
 		<key>connections</key>
 		<dict>
-			<key>Dinning Hall</key>
-			<integer>1</integer>
-			<key>Library</key>
+			<key>point6</key>
 			<integer>0</integer>
-			<key>point2</key>
+			<key>point7</key>
 			<integer>0</integer>
 		</dict>
+	</dict>
+	<key>point7</key>
+	<dict>
 		<key>coordinate</key>
-		<string>{42.546285, -72.606007}</string>
+		<string>{42.546366, -72.606196}</string>
+		<key>connections</key>
+		<dict>
+			<key>Hess</key>
+			<integer>0</integer>
+			<key>point12</key>
+			<integer>0</integer>
+			<key>point8</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point8</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546416, -72.606236}</string>
+		<key>connections</key>
+		<dict>
+			<key>point9</key>
+			<integer>0</integer>
+			<key>point7</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point9</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546413, -72.606366}</string>
+		<key>connections</key>
+		<dict>
+			<key>point8</key>
+			<integer>0</integer>
+			<key>Library</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Library</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546660, -72.606789}</string>
+		<key>connections</key>
+		<dict>
+			<key>point9</key>
+			<integer>0</integer>
+			<key>Koch</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Koch</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546768, -72.607453}</string>
+		<key>connections</key>
+		<dict>
+			<key>Library</key>
+			<integer>0</integer>
+			<key>point10</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point10</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546708, -72.608037}</string>
+		<key>connections</key>
+		<dict>
+			<key>Koch</key>
+			<integer>0</integer>
+			<key>point11</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point11</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546891, -72.608866}</string>
+		<key>connections</key>
+		<dict>
+			<key>point10</key>
+			<integer>0</integer>
+			<key>Athletic Fields</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Athletic Fields</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.546983, -72.609303}</string>
+		<key>connections</key>
+		<dict>
+			<key>point11</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point12</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.545199, -72.606401}</string>
+		<key>connections</key>
+		<dict>
+			<key>point7</key>
+			<integer>0</integer>
+			<key>point13</key>
+			<integer>0</integer>
+			<key>point14</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point13</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.545170, -72.606456}</string>
+		<key>connections</key>
+		<dict>
+			<key>point12</key>
+			<integer>0</integer>
+			<key>Dining Hall</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Dining Hall</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.544588, -72.606572}</string>
+		<key>connections</key>
+		<dict>
+			<key>point13</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>point14</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.545351, -72.607851}</string>
+		<key>connections</key>
+		<dict>
+			<key>point12</key>
+			<integer>0</integer>
+			<key>Athletic Center</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>Athletic Center</key>
+	<dict>
+		<key>coordinate</key>
+		<string>{42.545093, -72.607895}</string>
+		<key>connections</key>
+		<dict>
+			<key>point14</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
