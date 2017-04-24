@@ -14,7 +14,7 @@
 		1631E87A1EAD92E80018AAED /* The Boyden Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 1631E8791EAD92E80018AAED /* The Boyden Library.png */; };
 		167592821EA64577008EE831 /* Main School Building.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592811EA64577008EE831 /* Main School Building.png */; };
 		167592841EA645FE008EE831 /* The Koch Center.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592831EA645FE008EE831 /* The Koch Center.png */; };
-		167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592851EA6477C008EE831 /* Hess Center of the Arts.png */; };
+		167592861EA6477C008EE831 /* Hess Center for the Arts.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592851EA6477C008EE831 /* Hess Center for the Arts.png */; };
 		167592881EA79282008EE831 /* Athletic Center.png in Resources */ = {isa = PBXBuildFile; fileRef = 167592871EA79282008EE831 /* Athletic Center.png */; };
 		1675928C1EA797EF008EE831 /* Dining Hall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1675928B1EA797EF008EE831 /* Dining Hall.png */; };
 		169577F61E8A975F00EAC913 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169577F51E8A975F00EAC913 /* main.m */; };
@@ -105,7 +105,7 @@
 		1631E8791EAD92E80018AAED /* The Boyden Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "The Boyden Library.png"; path = "../../Media/The Boyden Library.png"; sourceTree = "<group>"; };
 		167592811EA64577008EE831 /* Main School Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Main School Building.png"; path = "../../Media/Main School Building.png"; sourceTree = "<group>"; };
 		167592831EA645FE008EE831 /* The Koch Center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "The Koch Center.png"; path = "../../Media/The Koch Center.png"; sourceTree = "<group>"; };
-		167592851EA6477C008EE831 /* Hess Center of the Arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hess Center of the Arts.png"; path = "../../Media/Hess Center of the Arts.png"; sourceTree = "<group>"; };
+		167592851EA6477C008EE831 /* Hess Center for the Arts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hess Center for the Arts.png"; path = "../../Media/Hess Center for the Arts.png"; sourceTree = "<group>"; };
 		167592871EA79282008EE831 /* Athletic Center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Athletic Center.png"; path = "../../Media/Athletic Center.png"; sourceTree = "<group>"; };
 		1675928B1EA797EF008EE831 /* Dining Hall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dining Hall.png"; path = "../../Media/Dining Hall.png"; sourceTree = "<group>"; };
 		169577F11E8A975F00EAC913 /* DeerfieldTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeerfieldTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,7 +366,7 @@
 				2828AE811EADA89800F071EA /* down.png */,
 				2828AE821EADA89800F071EA /* up.png */,
 				280539D51E93ECE000F0A18D /* map copy.png */,
-				167592851EA6477C008EE831 /* Hess Center of the Arts.png */,
+				167592851EA6477C008EE831 /* Hess Center for the Arts.png */,
 				28F076FA1E92754A00B7B7B4 /* Map-Pin.png */,
 				1631E8771EAD92A60018AAED /* Arms Building.png */,
 				167592871EA79282008EE831 /* Athletic Center.png */,
@@ -557,7 +557,7 @@
 				280539D61E93ECE000F0A18D /* map copy.png in Resources */,
 				1675928C1EA797EF008EE831 /* Dining Hall.png in Resources */,
 				2828AE831EADA89800F071EA /* down.png in Resources */,
-				167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */,
+				167592861EA6477C008EE831 /* Hess Center for the Arts.png in Resources */,
 				161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */,
 				28C63C5F1EADE6DD00C54B00 /* tour_icon.png in Resources */,
 				167592841EA645FE008EE831 /* The Koch Center.png in Resources */,

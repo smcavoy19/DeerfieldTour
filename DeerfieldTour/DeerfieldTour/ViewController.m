@@ -134,13 +134,17 @@
 
 #pragma mark - Map View delegate
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    [self performSegueWithIdentifier:@"showDetail" sender:view.annotation.title];
+}
+
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     
     if (annotation == mapView.userLocation) return nil;
     BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
     annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
-    return nil;
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
@@ -206,11 +210,10 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"building_coordinates" ofType:@"plist"];
     NSArray *attractions = [NSArray arrayWithContentsOfFile:filePath];
     for (NSDictionary *attraction in attractions) {
-        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        BuildingAnnotation *annotation = [[BuildingAnnotation alloc] init];
         CGPoint point = CGPointFromString(attraction[@"location"]);
         annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
-        annotation.title = annotation.title = attraction[@"name"];
-        
+        annotation.title = annotation.title = attraction[@"title"];
         [self.mapView addAnnotation:annotation];
     }
 }
