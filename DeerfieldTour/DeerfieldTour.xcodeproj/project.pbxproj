@@ -40,12 +40,56 @@
 		28233D501E8E83C70060BAD9 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D4F1E8E83C70060BAD9 /* close.png */; };
 		28233D521E8E84600060BAD9 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D511E8E84600060BAD9 /* info.png */; };
 		28233D541E8E86C90060BAD9 /* campus.png in Resources */ = {isa = PBXBuildFile; fileRef = 28233D531E8E86C90060BAD9 /* campus.png */; };
+		2828AE831EADA89800F071EA /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2828AE811EADA89800F071EA /* down.png */; };
+		2828AE841EADA89800F071EA /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 2828AE821EADA89800F071EA /* up.png */; };
 		287D6AC41E8DE65F00A42BE4 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 287D6AC31E8DE65F00A42BE4 /* map.png */; };
 		28CB15E21E8CB21400513304 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB15E11E8CB21400513304 /* Campus.m */; };
 		28CC1A511EA0763700290DD2 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4C1EA0763700290DD2 /* Graph.m */; };
 		28CC1A521EA0763700290DD2 /* Heap.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A4E1EA0763700290DD2 /* Heap.m */; };
 		28CC1A531EA0763700290DD2 /* PQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A501EA0763700290DD2 /* PQ.m */; };
 		28CC1A561EA0772A00290DD2 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC1A551EA0772A00290DD2 /* Vertex.m */; };
+		28E682071EADCBE300B9824A /* AutoResizeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681B31EADCBE300B9824A /* AutoResizeTextView.m */; };
+		28E682081EADCBE300B9824A /* MaterialControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681B51EADCBE300B9824A /* MaterialControls.m */; };
+		28E682091EADCBE300B9824A /* MDBubbleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681B71EADCBE300B9824A /* MDBubbleLabel.m */; };
+		28E6820A1EADCBE300B9824A /* MDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681B91EADCBE300B9824A /* MDButton.m */; };
+		28E6820B1EADCBE300B9824A /* MDCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681BB1EADCBE300B9824A /* MDCalendar.m */; };
+		28E6820C1EADCBE300B9824A /* MDCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681BD1EADCBE300B9824A /* MDCalendarCell.m */; };
+		28E6820D1EADCBE300B9824A /* MDCalendarDateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681BF1EADCBE300B9824A /* MDCalendarDateHeader.m */; };
+		28E6820E1EADCBE300B9824A /* MDCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681C11EADCBE300B9824A /* MDCalendarHeader.m */; };
+		28E6820F1EADCBE300B9824A /* MDCalendarYearSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681C31EADCBE300B9824A /* MDCalendarYearSelector.m */; };
+		28E682101EADCBE300B9824A /* MDCalendarYearSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681C51EADCBE300B9824A /* MDCalendarYearSelectorViewCell.m */; };
+		28E682111EADCBE300B9824A /* MDCircularProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681C71EADCBE300B9824A /* MDCircularProgressLayer.m */; };
+		28E682121EADCBE300B9824A /* MDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681C91EADCBE300B9824A /* MDCollectionViewCell.m */; };
+		28E682131EADCBE300B9824A /* MDDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681CC1EADCBE300B9824A /* MDDatePicker.m */; };
+		28E682141EADCBE300B9824A /* MDDatePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681CE1EADCBE300B9824A /* MDDatePickerDialog.m */; };
+		28E682151EADCBE300B9824A /* MDDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681D01EADCBE300B9824A /* MDDeviceHelper.m */; };
+		28E682161EADCBE300B9824A /* MDLinearProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681D21EADCBE300B9824A /* MDLinearProgressLayer.m */; };
+		28E682171EADCBE300B9824A /* MDMathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681D41EADCBE300B9824A /* MDMathHelper.m */; };
+		28E682181EADCBE300B9824A /* MDProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681D61EADCBE300B9824A /* MDProgress.m */; };
+		28E682191EADCBE300B9824A /* MDProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681D81EADCBE300B9824A /* MDProgressLayer.m */; };
+		28E6821A1EADCBE300B9824A /* MDRippleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681DA1EADCBE300B9824A /* MDRippleLayer.m */; };
+		28E6821B1EADCBE300B9824A /* MDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681DC1EADCBE300B9824A /* MDSlider.m */; };
+		28E6821C1EADCBE300B9824A /* MDSliderIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681DE1EADCBE300B9824A /* MDSliderIcon.m */; };
+		28E6821D1EADCBE300B9824A /* MDSliderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681E01EADCBE300B9824A /* MDSliderThumbView.m */; };
+		28E6821E1EADCBE300B9824A /* MDSliderTickMarksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681E21EADCBE300B9824A /* MDSliderTickMarksView.m */; };
+		28E6821F1EADCBE300B9824A /* MDSnackbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681E41EADCBE300B9824A /* MDSnackbar.m */; };
+		28E682201EADCBE300B9824A /* MDSuggestPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681E61EADCBE300B9824A /* MDSuggestPopupView.m */; };
+		28E682211EADCBE300B9824A /* MDSuggestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681E81EADCBE300B9824A /* MDSuggestTableView.m */; };
+		28E682221EADCBE300B9824A /* MDSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681EA1EADCBE300B9824A /* MDSwitch.m */; };
+		28E682231EADCBE300B9824A /* MDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681EC1EADCBE300B9824A /* MDTabBar.m */; };
+		28E682241EADCBE300B9824A /* MDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681EE1EADCBE300B9824A /* MDTabBarViewController.m */; };
+		28E682251EADCBE300B9824A /* MDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681F01EADCBE300B9824A /* MDTableViewCell.m */; };
+		28E682261EADCBE300B9824A /* MDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681F21EADCBE300B9824A /* MDTextField.m */; };
+		28E682271EADCBE300B9824A /* MDTimePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681F41EADCBE300B9824A /* MDTimePickerDialog.m */; };
+		28E682281EADCBE300B9824A /* MDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681F61EADCBE300B9824A /* MDToast.m */; };
+		28E682291EADCBE300B9824A /* MDTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681F81EADCBE300B9824A /* MDTouchGestureRecognizer.m */; };
+		28E6822A1EADCBE300B9824A /* NSCalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681FA1EADCBE300B9824A /* NSCalendarHelper.m */; };
+		28E6822B1EADCBE300B9824A /* NSDate+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681FC1EADCBE300B9824A /* NSDate+MDExtension.m */; };
+		28E6822C1EADCBE300B9824A /* NSDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E681FE1EADCBE300B9824A /* NSDateHelper.m */; };
+		28E6822D1EADCBE300B9824A /* UIColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682001EADCBE300B9824A /* UIColorHelper.m */; };
+		28E6822E1EADCBE300B9824A /* UIFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682021EADCBE300B9824A /* UIFontHelper.m */; };
+		28E6822F1EADCBE300B9824A /* UIView+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682041EADCBE300B9824A /* UIView+MDExtension.m */; };
+		28E682301EADCBE300B9824A /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E682061EADCBE300B9824A /* UIViewHelper.m */; };
 		28F076FB1E92754A00B7B7B4 /* Map-Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F076FA1E92754A00B7B7B4 /* Map-Pin.png */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +137,8 @@
 		28233D4F1E8E83C70060BAD9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		28233D511E8E84600060BAD9 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		28233D531E8E86C90060BAD9 /* campus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campus.png; sourceTree = "<group>"; };
+		2828AE811EADA89800F071EA /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		2828AE821EADA89800F071EA /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		287D6AC31E8DE65F00A42BE4 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		28CB15E01E8CB21400513304 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
 		28CB15E11E8CB21400513304 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
@@ -104,6 +150,91 @@
 		28CC1A501EA0763700290DD2 /* PQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQ.m; sourceTree = "<group>"; };
 		28CC1A541EA0772A00290DD2 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		28CC1A551EA0772A00290DD2 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		28E681B21EADCBE300B9824A /* AutoResizeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoResizeTextView.h; path = MaterialControls/AutoResizeTextView.h; sourceTree = "<group>"; };
+		28E681B31EADCBE300B9824A /* AutoResizeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoResizeTextView.m; path = MaterialControls/AutoResizeTextView.m; sourceTree = "<group>"; };
+		28E681B41EADCBE300B9824A /* MaterialControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaterialControls.h; path = MaterialControls/MaterialControls.h; sourceTree = "<group>"; };
+		28E681B51EADCBE300B9824A /* MaterialControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaterialControls.m; path = MaterialControls/MaterialControls.m; sourceTree = "<group>"; };
+		28E681B61EADCBE300B9824A /* MDBubbleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDBubbleLabel.h; path = MaterialControls/MDBubbleLabel.h; sourceTree = "<group>"; };
+		28E681B71EADCBE300B9824A /* MDBubbleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDBubbleLabel.m; path = MaterialControls/MDBubbleLabel.m; sourceTree = "<group>"; };
+		28E681B81EADCBE300B9824A /* MDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDButton.h; path = MaterialControls/MDButton.h; sourceTree = "<group>"; };
+		28E681B91EADCBE300B9824A /* MDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDButton.m; path = MaterialControls/MDButton.m; sourceTree = "<group>"; };
+		28E681BA1EADCBE300B9824A /* MDCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendar.h; path = MaterialControls/MDCalendar.h; sourceTree = "<group>"; };
+		28E681BB1EADCBE300B9824A /* MDCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendar.m; path = MaterialControls/MDCalendar.m; sourceTree = "<group>"; };
+		28E681BC1EADCBE300B9824A /* MDCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendarCell.h; path = MaterialControls/MDCalendarCell.h; sourceTree = "<group>"; };
+		28E681BD1EADCBE300B9824A /* MDCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendarCell.m; path = MaterialControls/MDCalendarCell.m; sourceTree = "<group>"; };
+		28E681BE1EADCBE300B9824A /* MDCalendarDateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendarDateHeader.h; path = MaterialControls/MDCalendarDateHeader.h; sourceTree = "<group>"; };
+		28E681BF1EADCBE300B9824A /* MDCalendarDateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendarDateHeader.m; path = MaterialControls/MDCalendarDateHeader.m; sourceTree = "<group>"; };
+		28E681C01EADCBE300B9824A /* MDCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendarHeader.h; path = MaterialControls/MDCalendarHeader.h; sourceTree = "<group>"; };
+		28E681C11EADCBE300B9824A /* MDCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendarHeader.m; path = MaterialControls/MDCalendarHeader.m; sourceTree = "<group>"; };
+		28E681C21EADCBE300B9824A /* MDCalendarYearSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendarYearSelector.h; path = MaterialControls/MDCalendarYearSelector.h; sourceTree = "<group>"; };
+		28E681C31EADCBE300B9824A /* MDCalendarYearSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendarYearSelector.m; path = MaterialControls/MDCalendarYearSelector.m; sourceTree = "<group>"; };
+		28E681C41EADCBE300B9824A /* MDCalendarYearSelectorViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCalendarYearSelectorViewCell.h; path = MaterialControls/MDCalendarYearSelectorViewCell.h; sourceTree = "<group>"; };
+		28E681C51EADCBE300B9824A /* MDCalendarYearSelectorViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCalendarYearSelectorViewCell.m; path = MaterialControls/MDCalendarYearSelectorViewCell.m; sourceTree = "<group>"; };
+		28E681C61EADCBE300B9824A /* MDCircularProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCircularProgressLayer.h; path = MaterialControls/MDCircularProgressLayer.h; sourceTree = "<group>"; };
+		28E681C71EADCBE300B9824A /* MDCircularProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCircularProgressLayer.m; path = MaterialControls/MDCircularProgressLayer.m; sourceTree = "<group>"; };
+		28E681C81EADCBE300B9824A /* MDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCollectionViewCell.h; path = MaterialControls/MDCollectionViewCell.h; sourceTree = "<group>"; };
+		28E681C91EADCBE300B9824A /* MDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCollectionViewCell.m; path = MaterialControls/MDCollectionViewCell.m; sourceTree = "<group>"; };
+		28E681CA1EADCBE300B9824A /* MDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDConstants.h; path = MaterialControls/MDConstants.h; sourceTree = "<group>"; };
+		28E681CB1EADCBE300B9824A /* MDDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDDatePicker.h; path = MaterialControls/MDDatePicker.h; sourceTree = "<group>"; };
+		28E681CC1EADCBE300B9824A /* MDDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDDatePicker.m; path = MaterialControls/MDDatePicker.m; sourceTree = "<group>"; };
+		28E681CD1EADCBE300B9824A /* MDDatePickerDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDDatePickerDialog.h; path = MaterialControls/MDDatePickerDialog.h; sourceTree = "<group>"; };
+		28E681CE1EADCBE300B9824A /* MDDatePickerDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDDatePickerDialog.m; path = MaterialControls/MDDatePickerDialog.m; sourceTree = "<group>"; };
+		28E681CF1EADCBE300B9824A /* MDDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDDeviceHelper.h; path = MaterialControls/MDDeviceHelper.h; sourceTree = "<group>"; };
+		28E681D01EADCBE300B9824A /* MDDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDDeviceHelper.m; path = MaterialControls/MDDeviceHelper.m; sourceTree = "<group>"; };
+		28E681D11EADCBE300B9824A /* MDLinearProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDLinearProgressLayer.h; path = MaterialControls/MDLinearProgressLayer.h; sourceTree = "<group>"; };
+		28E681D21EADCBE300B9824A /* MDLinearProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDLinearProgressLayer.m; path = MaterialControls/MDLinearProgressLayer.m; sourceTree = "<group>"; };
+		28E681D31EADCBE300B9824A /* MDMathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDMathHelper.h; path = MaterialControls/MDMathHelper.h; sourceTree = "<group>"; };
+		28E681D41EADCBE300B9824A /* MDMathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDMathHelper.m; path = MaterialControls/MDMathHelper.m; sourceTree = "<group>"; };
+		28E681D51EADCBE300B9824A /* MDProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDProgress.h; path = MaterialControls/MDProgress.h; sourceTree = "<group>"; };
+		28E681D61EADCBE300B9824A /* MDProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDProgress.m; path = MaterialControls/MDProgress.m; sourceTree = "<group>"; };
+		28E681D71EADCBE300B9824A /* MDProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDProgressLayer.h; path = MaterialControls/MDProgressLayer.h; sourceTree = "<group>"; };
+		28E681D81EADCBE300B9824A /* MDProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDProgressLayer.m; path = MaterialControls/MDProgressLayer.m; sourceTree = "<group>"; };
+		28E681D91EADCBE300B9824A /* MDRippleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDRippleLayer.h; path = MaterialControls/MDRippleLayer.h; sourceTree = "<group>"; };
+		28E681DA1EADCBE300B9824A /* MDRippleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDRippleLayer.m; path = MaterialControls/MDRippleLayer.m; sourceTree = "<group>"; };
+		28E681DB1EADCBE300B9824A /* MDSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSlider.h; path = MaterialControls/MDSlider.h; sourceTree = "<group>"; };
+		28E681DC1EADCBE300B9824A /* MDSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSlider.m; path = MaterialControls/MDSlider.m; sourceTree = "<group>"; };
+		28E681DD1EADCBE300B9824A /* MDSliderIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSliderIcon.h; path = MaterialControls/MDSliderIcon.h; sourceTree = "<group>"; };
+		28E681DE1EADCBE300B9824A /* MDSliderIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSliderIcon.m; path = MaterialControls/MDSliderIcon.m; sourceTree = "<group>"; };
+		28E681DF1EADCBE300B9824A /* MDSliderThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSliderThumbView.h; path = MaterialControls/MDSliderThumbView.h; sourceTree = "<group>"; };
+		28E681E01EADCBE300B9824A /* MDSliderThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSliderThumbView.m; path = MaterialControls/MDSliderThumbView.m; sourceTree = "<group>"; };
+		28E681E11EADCBE300B9824A /* MDSliderTickMarksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSliderTickMarksView.h; path = MaterialControls/MDSliderTickMarksView.h; sourceTree = "<group>"; };
+		28E681E21EADCBE300B9824A /* MDSliderTickMarksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSliderTickMarksView.m; path = MaterialControls/MDSliderTickMarksView.m; sourceTree = "<group>"; };
+		28E681E31EADCBE300B9824A /* MDSnackbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSnackbar.h; path = MaterialControls/MDSnackbar.h; sourceTree = "<group>"; };
+		28E681E41EADCBE300B9824A /* MDSnackbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSnackbar.m; path = MaterialControls/MDSnackbar.m; sourceTree = "<group>"; };
+		28E681E51EADCBE300B9824A /* MDSuggestPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSuggestPopupView.h; path = MaterialControls/MDSuggestPopupView.h; sourceTree = "<group>"; };
+		28E681E61EADCBE300B9824A /* MDSuggestPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSuggestPopupView.m; path = MaterialControls/MDSuggestPopupView.m; sourceTree = "<group>"; };
+		28E681E71EADCBE300B9824A /* MDSuggestTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSuggestTableView.h; path = MaterialControls/MDSuggestTableView.h; sourceTree = "<group>"; };
+		28E681E81EADCBE300B9824A /* MDSuggestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSuggestTableView.m; path = MaterialControls/MDSuggestTableView.m; sourceTree = "<group>"; };
+		28E681E91EADCBE300B9824A /* MDSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDSwitch.h; path = MaterialControls/MDSwitch.h; sourceTree = "<group>"; };
+		28E681EA1EADCBE300B9824A /* MDSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDSwitch.m; path = MaterialControls/MDSwitch.m; sourceTree = "<group>"; };
+		28E681EB1EADCBE300B9824A /* MDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTabBar.h; path = MaterialControls/MDTabBar.h; sourceTree = "<group>"; };
+		28E681EC1EADCBE300B9824A /* MDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTabBar.m; path = MaterialControls/MDTabBar.m; sourceTree = "<group>"; };
+		28E681ED1EADCBE300B9824A /* MDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTabBarViewController.h; path = MaterialControls/MDTabBarViewController.h; sourceTree = "<group>"; };
+		28E681EE1EADCBE300B9824A /* MDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTabBarViewController.m; path = MaterialControls/MDTabBarViewController.m; sourceTree = "<group>"; };
+		28E681EF1EADCBE300B9824A /* MDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTableViewCell.h; path = MaterialControls/MDTableViewCell.h; sourceTree = "<group>"; };
+		28E681F01EADCBE300B9824A /* MDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTableViewCell.m; path = MaterialControls/MDTableViewCell.m; sourceTree = "<group>"; };
+		28E681F11EADCBE300B9824A /* MDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTextField.h; path = MaterialControls/MDTextField.h; sourceTree = "<group>"; };
+		28E681F21EADCBE300B9824A /* MDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTextField.m; path = MaterialControls/MDTextField.m; sourceTree = "<group>"; };
+		28E681F31EADCBE300B9824A /* MDTimePickerDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTimePickerDialog.h; path = MaterialControls/MDTimePickerDialog.h; sourceTree = "<group>"; };
+		28E681F41EADCBE300B9824A /* MDTimePickerDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTimePickerDialog.m; path = MaterialControls/MDTimePickerDialog.m; sourceTree = "<group>"; };
+		28E681F51EADCBE300B9824A /* MDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDToast.h; path = MaterialControls/MDToast.h; sourceTree = "<group>"; };
+		28E681F61EADCBE300B9824A /* MDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDToast.m; path = MaterialControls/MDToast.m; sourceTree = "<group>"; };
+		28E681F71EADCBE300B9824A /* MDTouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDTouchGestureRecognizer.h; path = MaterialControls/MDTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		28E681F81EADCBE300B9824A /* MDTouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDTouchGestureRecognizer.m; path = MaterialControls/MDTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		28E681F91EADCBE300B9824A /* NSCalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSCalendarHelper.h; path = MaterialControls/NSCalendarHelper.h; sourceTree = "<group>"; };
+		28E681FA1EADCBE300B9824A /* NSCalendarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSCalendarHelper.m; path = MaterialControls/NSCalendarHelper.m; sourceTree = "<group>"; };
+		28E681FB1EADCBE300B9824A /* NSDate+MDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+MDExtension.h"; path = "MaterialControls/NSDate+MDExtension.h"; sourceTree = "<group>"; };
+		28E681FC1EADCBE300B9824A /* NSDate+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MDExtension.m"; path = "MaterialControls/NSDate+MDExtension.m"; sourceTree = "<group>"; };
+		28E681FD1EADCBE300B9824A /* NSDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateHelper.h; path = MaterialControls/NSDateHelper.h; sourceTree = "<group>"; };
+		28E681FE1EADCBE300B9824A /* NSDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateHelper.m; path = MaterialControls/NSDateHelper.m; sourceTree = "<group>"; };
+		28E681FF1EADCBE300B9824A /* UIColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIColorHelper.h; path = MaterialControls/UIColorHelper.h; sourceTree = "<group>"; };
+		28E682001EADCBE300B9824A /* UIColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIColorHelper.m; path = MaterialControls/UIColorHelper.m; sourceTree = "<group>"; };
+		28E682011EADCBE300B9824A /* UIFontHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIFontHelper.h; path = MaterialControls/UIFontHelper.h; sourceTree = "<group>"; };
+		28E682021EADCBE300B9824A /* UIFontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIFontHelper.m; path = MaterialControls/UIFontHelper.m; sourceTree = "<group>"; };
+		28E682031EADCBE300B9824A /* UIView+MDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+MDExtension.h"; path = "MaterialControls/UIView+MDExtension.h"; sourceTree = "<group>"; };
+		28E682041EADCBE300B9824A /* UIView+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDExtension.m"; path = "MaterialControls/UIView+MDExtension.m"; sourceTree = "<group>"; };
+		28E682051EADCBE300B9824A /* UIViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewHelper.h; path = MaterialControls/UIViewHelper.h; sourceTree = "<group>"; };
+		28E682061EADCBE300B9824A /* UIViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewHelper.m; path = MaterialControls/UIViewHelper.m; sourceTree = "<group>"; };
 		28F076FA1E92754A00B7B7B4 /* Map-Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map-Pin.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +290,7 @@
 		169577F31E8A975F00EAC913 /* DeerfieldTour */ = {
 			isa = PBXGroup;
 			children = (
+				28E682311EADCBEE00B9824A /* Material Control */,
 				161C81A61E8E8633008F9AE2 /* MapRoute */,
 				282049711E8BE85F007F6719 /* Map Classes */,
 				169577F71E8A975F00EAC913 /* AppDelegate.h */,
@@ -220,6 +352,8 @@
 		282049761E8BE890007F6719 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				2828AE811EADA89800F071EA /* down.png */,
+				2828AE821EADA89800F071EA /* up.png */,
 				280539D51E93ECE000F0A18D /* map copy.png */,
 				167592851EA6477C008EE831 /* Hess Center of the Arts.png */,
 				28F076FA1E92754A00B7B7B4 /* Map-Pin.png */,
@@ -237,6 +371,98 @@
 				282049741E8BE88A007F6719 /* campus_image.png */,
 			);
 			name = Media;
+			sourceTree = "<group>";
+		};
+		28E682311EADCBEE00B9824A /* Material Control */ = {
+			isa = PBXGroup;
+			children = (
+				28E681B21EADCBE300B9824A /* AutoResizeTextView.h */,
+				28E681B31EADCBE300B9824A /* AutoResizeTextView.m */,
+				28E681B41EADCBE300B9824A /* MaterialControls.h */,
+				28E681B51EADCBE300B9824A /* MaterialControls.m */,
+				28E681B61EADCBE300B9824A /* MDBubbleLabel.h */,
+				28E681B71EADCBE300B9824A /* MDBubbleLabel.m */,
+				28E681B81EADCBE300B9824A /* MDButton.h */,
+				28E681B91EADCBE300B9824A /* MDButton.m */,
+				28E681BA1EADCBE300B9824A /* MDCalendar.h */,
+				28E681BB1EADCBE300B9824A /* MDCalendar.m */,
+				28E681BC1EADCBE300B9824A /* MDCalendarCell.h */,
+				28E681BD1EADCBE300B9824A /* MDCalendarCell.m */,
+				28E681BE1EADCBE300B9824A /* MDCalendarDateHeader.h */,
+				28E681BF1EADCBE300B9824A /* MDCalendarDateHeader.m */,
+				28E681C01EADCBE300B9824A /* MDCalendarHeader.h */,
+				28E681C11EADCBE300B9824A /* MDCalendarHeader.m */,
+				28E681C21EADCBE300B9824A /* MDCalendarYearSelector.h */,
+				28E681C31EADCBE300B9824A /* MDCalendarYearSelector.m */,
+				28E681C41EADCBE300B9824A /* MDCalendarYearSelectorViewCell.h */,
+				28E681C51EADCBE300B9824A /* MDCalendarYearSelectorViewCell.m */,
+				28E681C61EADCBE300B9824A /* MDCircularProgressLayer.h */,
+				28E681C71EADCBE300B9824A /* MDCircularProgressLayer.m */,
+				28E681C81EADCBE300B9824A /* MDCollectionViewCell.h */,
+				28E681C91EADCBE300B9824A /* MDCollectionViewCell.m */,
+				28E681CA1EADCBE300B9824A /* MDConstants.h */,
+				28E681CB1EADCBE300B9824A /* MDDatePicker.h */,
+				28E681CC1EADCBE300B9824A /* MDDatePicker.m */,
+				28E681CD1EADCBE300B9824A /* MDDatePickerDialog.h */,
+				28E681CE1EADCBE300B9824A /* MDDatePickerDialog.m */,
+				28E681CF1EADCBE300B9824A /* MDDeviceHelper.h */,
+				28E681D01EADCBE300B9824A /* MDDeviceHelper.m */,
+				28E681D11EADCBE300B9824A /* MDLinearProgressLayer.h */,
+				28E681D21EADCBE300B9824A /* MDLinearProgressLayer.m */,
+				28E681D31EADCBE300B9824A /* MDMathHelper.h */,
+				28E681D41EADCBE300B9824A /* MDMathHelper.m */,
+				28E681D51EADCBE300B9824A /* MDProgress.h */,
+				28E681D61EADCBE300B9824A /* MDProgress.m */,
+				28E681D71EADCBE300B9824A /* MDProgressLayer.h */,
+				28E681D81EADCBE300B9824A /* MDProgressLayer.m */,
+				28E681D91EADCBE300B9824A /* MDRippleLayer.h */,
+				28E681DA1EADCBE300B9824A /* MDRippleLayer.m */,
+				28E681DB1EADCBE300B9824A /* MDSlider.h */,
+				28E681DC1EADCBE300B9824A /* MDSlider.m */,
+				28E681DD1EADCBE300B9824A /* MDSliderIcon.h */,
+				28E681DE1EADCBE300B9824A /* MDSliderIcon.m */,
+				28E681DF1EADCBE300B9824A /* MDSliderThumbView.h */,
+				28E681E01EADCBE300B9824A /* MDSliderThumbView.m */,
+				28E681E11EADCBE300B9824A /* MDSliderTickMarksView.h */,
+				28E681E21EADCBE300B9824A /* MDSliderTickMarksView.m */,
+				28E681E31EADCBE300B9824A /* MDSnackbar.h */,
+				28E681E41EADCBE300B9824A /* MDSnackbar.m */,
+				28E681E51EADCBE300B9824A /* MDSuggestPopupView.h */,
+				28E681E61EADCBE300B9824A /* MDSuggestPopupView.m */,
+				28E681E71EADCBE300B9824A /* MDSuggestTableView.h */,
+				28E681E81EADCBE300B9824A /* MDSuggestTableView.m */,
+				28E681E91EADCBE300B9824A /* MDSwitch.h */,
+				28E681EA1EADCBE300B9824A /* MDSwitch.m */,
+				28E681EB1EADCBE300B9824A /* MDTabBar.h */,
+				28E681EC1EADCBE300B9824A /* MDTabBar.m */,
+				28E681ED1EADCBE300B9824A /* MDTabBarViewController.h */,
+				28E681EE1EADCBE300B9824A /* MDTabBarViewController.m */,
+				28E681EF1EADCBE300B9824A /* MDTableViewCell.h */,
+				28E681F01EADCBE300B9824A /* MDTableViewCell.m */,
+				28E681F11EADCBE300B9824A /* MDTextField.h */,
+				28E681F21EADCBE300B9824A /* MDTextField.m */,
+				28E681F31EADCBE300B9824A /* MDTimePickerDialog.h */,
+				28E681F41EADCBE300B9824A /* MDTimePickerDialog.m */,
+				28E681F51EADCBE300B9824A /* MDToast.h */,
+				28E681F61EADCBE300B9824A /* MDToast.m */,
+				28E681F71EADCBE300B9824A /* MDTouchGestureRecognizer.h */,
+				28E681F81EADCBE300B9824A /* MDTouchGestureRecognizer.m */,
+				28E681F91EADCBE300B9824A /* NSCalendarHelper.h */,
+				28E681FA1EADCBE300B9824A /* NSCalendarHelper.m */,
+				28E681FB1EADCBE300B9824A /* NSDate+MDExtension.h */,
+				28E681FC1EADCBE300B9824A /* NSDate+MDExtension.m */,
+				28E681FD1EADCBE300B9824A /* NSDateHelper.h */,
+				28E681FE1EADCBE300B9824A /* NSDateHelper.m */,
+				28E681FF1EADCBE300B9824A /* UIColorHelper.h */,
+				28E682001EADCBE300B9824A /* UIColorHelper.m */,
+				28E682011EADCBE300B9824A /* UIFontHelper.h */,
+				28E682021EADCBE300B9824A /* UIFontHelper.m */,
+				28E682031EADCBE300B9824A /* UIView+MDExtension.h */,
+				28E682041EADCBE300B9824A /* UIView+MDExtension.m */,
+				28E682051EADCBE300B9824A /* UIViewHelper.h */,
+				28E682061EADCBE300B9824A /* UIViewHelper.m */,
+			);
+			name = "Material Control";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +530,7 @@
 				28233D521E8E84600060BAD9 /* info.png in Resources */,
 				28233D501E8E83C70060BAD9 /* close.png in Resources */,
 				16C51F3E1EA1BFD100EF3913 /* building_summaries.plist in Resources */,
+				2828AE841EADA89800F071EA /* up.png in Resources */,
 				28233D541E8E86C90060BAD9 /* campus.png in Resources */,
 				282049751E8BE88A007F6719 /* campus_image.png in Resources */,
 				1631E8751EAD92200018AAED /* Athletic Fields.png in Resources */,
@@ -317,6 +544,7 @@
 				169577FF1E8A975F00EAC913 /* Main.storyboard in Resources */,
 				280539D61E93ECE000F0A18D /* map copy.png in Resources */,
 				1675928C1EA797EF008EE831 /* Dining Hall.png in Resources */,
+				2828AE831EADA89800F071EA /* down.png in Resources */,
 				167592861EA6477C008EE831 /* Hess Center of the Arts.png in Resources */,
 				161C81A21E8E839A008F9AE2 /* route_points.plist in Resources */,
 				167592841EA645FE008EE831 /* The Koch Center.png in Resources */,
@@ -330,20 +558,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E6821A1EADCBE300B9824A /* MDRippleLayer.m in Sources */,
+				28E682081EADCBE300B9824A /* MaterialControls.m in Sources */,
+				28E6821C1EADCBE300B9824A /* MDSliderIcon.m in Sources */,
+				28E682211EADCBE300B9824A /* MDSuggestTableView.m in Sources */,
 				169577FC1E8A975F00EAC913 /* ViewController.m in Sources */,
+				28E6820F1EADCBE300B9824A /* MDCalendarYearSelector.m in Sources */,
+				28E6822A1EADCBE300B9824A /* NSCalendarHelper.m in Sources */,
+				28E6820B1EADCBE300B9824A /* MDCalendar.m in Sources */,
+				28E6821D1EADCBE300B9824A /* MDSliderThumbView.m in Sources */,
 				161C81A51E8E8628008F9AE2 /* MapRoute.m in Sources */,
 				169577F91E8A975F00EAC913 /* AppDelegate.m in Sources */,
+				28E682201EADCBE300B9824A /* MDSuggestPopupView.m in Sources */,
+				28E682171EADCBE300B9824A /* MDMathHelper.m in Sources */,
+				28E682271EADCBE300B9824A /* MDTimePickerDialog.m in Sources */,
+				28E6821E1EADCBE300B9824A /* MDSliderTickMarksView.m in Sources */,
+				28E682101EADCBE300B9824A /* MDCalendarYearSelectorViewCell.m in Sources */,
 				281D7AA41E8C99FB008EF7E4 /* MapOverlay.m in Sources */,
 				28CB15E21E8CB21400513304 /* Campus.m in Sources */,
+				28E682301EADCBE300B9824A /* UIViewHelper.m in Sources */,
+				28E682221EADCBE300B9824A /* MDSwitch.m in Sources */,
+				28E6821B1EADCBE300B9824A /* MDSlider.m in Sources */,
 				169577F61E8A975F00EAC913 /* main.m in Sources */,
+				28E682191EADCBE300B9824A /* MDProgressLayer.m in Sources */,
+				28E6822D1EADCBE300B9824A /* UIColorHelper.m in Sources */,
+				28E682111EADCBE300B9824A /* MDCircularProgressLayer.m in Sources */,
+				28E682151EADCBE300B9824A /* MDDeviceHelper.m in Sources */,
+				28E6822B1EADCBE300B9824A /* NSDate+MDExtension.m in Sources */,
+				28E682181EADCBE300B9824A /* MDProgress.m in Sources */,
 				282049671E8BE7DC007F6719 /* MapOverlayView.m in Sources */,
+				28E682231EADCBE300B9824A /* MDTabBar.m in Sources */,
+				28E682141EADCBE300B9824A /* MDDatePickerDialog.m in Sources */,
+				28E682091EADCBE300B9824A /* MDBubbleLabel.m in Sources */,
 				280539DC1E93EE0800F0A18D /* BuildingAnnotation.m in Sources */,
+				28E682251EADCBE300B9824A /* MDTableViewCell.m in Sources */,
+				28E682161EADCBE300B9824A /* MDLinearProgressLayer.m in Sources */,
+				28E6820A1EADCBE300B9824A /* MDButton.m in Sources */,
+				28E682281EADCBE300B9824A /* MDToast.m in Sources */,
 				28CC1A531EA0763700290DD2 /* PQ.m in Sources */,
+				28E6820E1EADCBE300B9824A /* MDCalendarHeader.m in Sources */,
+				28E6822E1EADCBE300B9824A /* UIFontHelper.m in Sources */,
+				28E682121EADCBE300B9824A /* MDCollectionViewCell.m in Sources */,
+				28E6822F1EADCBE300B9824A /* UIView+MDExtension.m in Sources */,
+				28E682291EADCBE300B9824A /* MDTouchGestureRecognizer.m in Sources */,
 				28CC1A561EA0772A00290DD2 /* Vertex.m in Sources */,
+				28E6822C1EADCBE300B9824A /* NSDateHelper.m in Sources */,
+				28E6821F1EADCBE300B9824A /* MDSnackbar.m in Sources */,
+				28E682261EADCBE300B9824A /* MDTextField.m in Sources */,
+				28E682241EADCBE300B9824A /* MDTabBarViewController.m in Sources */,
+				28E6820D1EADCBE300B9824A /* MDCalendarDateHeader.m in Sources */,
 				28CC1A521EA0763700290DD2 /* Heap.m in Sources */,
 				16C51F3C1EA0FEBB00EF3913 /* DescriptionViewController.m in Sources */,
 				28CC1A511EA0763700290DD2 /* Graph.m in Sources */,
+				28E682071EADCBE300B9824A /* AutoResizeTextView.m in Sources */,
+				28E6820C1EADCBE300B9824A /* MDCalendarCell.m in Sources */,
 				280539DB1E93EE0800F0A18D /* BuildingAnnotationView.m in Sources */,
+				28E682131EADCBE300B9824A /* MDDatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
 				INFOPLIST_FILE = DeerfieldTour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DeerfieldTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,6 +746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8NZ8K5GNH8;
 				INFOPLIST_FILE = DeerfieldTour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DeerfieldTour;
 				PRODUCT_NAME = "$(TARGET_NAME)";

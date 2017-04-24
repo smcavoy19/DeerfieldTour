@@ -11,10 +11,10 @@
 #import "MapRoute.h"
 #import "DescriptionViewController.h"
 
-@interface ViewController (){
-    NSMutableArray *_pickerData;
-    UITextField *_activeField;
-}
+@interface ViewController ()
+
+@property (strong, nonatomic) NSMutableArray *pickerData;
+@property (strong, nonatomic) UITextField *activeField;
 
 @end
 
@@ -25,16 +25,11 @@
 
 
 #pragma mark - Text Field Delegate
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    _activeField = textField;
+    self.activeField = textField;
     self.picker.hidden = NO;
-}
-
-
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-
 }
 
 #pragma mark - PickerView Delegate
@@ -93,6 +88,7 @@
 #pragma mark - Location Manager
 
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"There is an error retrieving your location" message:@"Please try again later" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     }];
@@ -136,16 +132,57 @@
     }
 }
 
+#pragma mark - Map View delegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    
+    if (annotation == mapView.userLocation) return nil;
+    BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
+    annotationView.canShowCallout = YES;
+    return annotationView;
+    return nil;
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+    
+    if ([overlay isKindOfClass:MapOverlay.class]) {
+        MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map copy.png"]];
+
+        return overlayView;
+    } else if ([overlay isKindOfClass:MKPolyline.class]) {
+        MKPolylineRenderer *lineView = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+        lineView.strokeColor = [UIColor redColor];
+        lineView.lineWidth = 1.0;
+        
+        return lineView;
+    }
+    
+    return nil;
+}
+
 #pragma mark - Private
 
--(void)setShadowforView:(UIView *)view masksToBounds:(BOOL)masksToBounds{
-    
-    view.layer.cornerRadius = 15;
-    view.layer.shadowRadius = 2.0f;
-    view.layer.shadowColor = [UIColor lightGrayColor].CGColor;
-    view.layer.shadowOffset = CGSizeMake(-1.0f, 3.0f);
-    view.layer.shadowOpacity = 0.8f;
-    view.layer.masksToBounds = masksToBounds;
+- (IBAction)clearRoute:(id)sender {
+    for (MapOverlay *overlay in self.mapView.overlays) {
+        if ([overlay isKindOfClass:[MKPolyline class]])
+            [self.mapView removeOverlay:overlay];
+    }
+}
+
+- (IBAction)mapTypeChanged:(id)sender {
+    switch (self.mapTypeSegmentedControl.selectedSegmentIndex) {
+        case 0:
+            self.mapView.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            self.mapView.mapType = MKMapTypeHybrid;
+            break;
+        case 2:
+            self.mapView.mapType = MKMapTypeSatellite;
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)addBuildingPins {
@@ -166,58 +203,18 @@
     return sqrtf(powf(a.x-b.x, 2.0) + powf(a.y-b.y, 2.0));
 }
 
-#pragma mark - IBActions
-
-- (IBAction)mapTypeChanged:(id)sender {
-    switch (self.mapTypeSegmentedControl.selectedSegmentIndex) {
-        case 0:
-            self.mapView.mapType = MKMapTypeStandard;
-            break;
-        case 1:
-            self.mapView.mapType = MKMapTypeHybrid;
-            break;
-        case 2:
-            self.mapView.mapType = MKMapTypeSatellite;
-            break;
-        default:
-            break;
-    }
-}
-
-#pragma mark - Map View delegate
-
-- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
-    
-}
-- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view{
-    
-}
-
-- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
-    
-    if ([overlay isKindOfClass:MapOverlay.class]) {
-        MapOverlayView *overlayView = [[MapOverlayView alloc] initWithOverlay:overlay overlayImage:[UIImage imageNamed:@"map copy.png"]];
-
-        return overlayView;
-    } else if ([overlay isKindOfClass:MKPolyline.class]) {
-        MKPolylineRenderer *lineView = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-        lineView.strokeColor = [UIColor redColor];
-        lineView.lineWidth = 1.0;
-        
-        return lineView;
-    }
-    
-    return nil;
-}
 - (IBAction)segmentSelected:(id)sender {
     
-    if (self.segmentedControl.selectedSegmentIndex == 0) {\
+    int viewHeight = 0;
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
         self.picker.hidden = YES;
         self.vicinityTable.hidden = NO;
         self.startTextfield.hidden = YES;
         self.endTextField.hidden = YES;
         self.directionButton.hidden = YES;
         self.mapTypeSegmentedControl.hidden = YES;
+        self.clearButton.hidden = YES;
+        viewHeight = 200;
     }else if (self.segmentedControl.selectedSegmentIndex == 1) {
         self.picker.hidden = NO;
         self.vicinityTable.hidden = YES;
@@ -225,6 +222,8 @@
         self.endTextField.hidden = NO;
         self.directionButton.hidden = NO;
         self.mapTypeSegmentedControl.hidden = YES;
+        self.clearButton.hidden = NO;
+        viewHeight = 265;
     }else{
         self.picker.hidden = YES;
         self.vicinityTable.hidden = YES;
@@ -232,35 +231,33 @@
         self.endTextField.hidden = YES;
         self.directionButton.hidden = YES;
         self.mapTypeSegmentedControl.hidden = NO;
+        self.clearButton.hidden = YES;
+        viewHeight = 100;
     }
+    [UIView animateWithDuration:0.2 animations:^{
+        self.tableHeight.constant = viewHeight;
+        [self.view layoutIfNeeded];
+    }];
 }
 - (IBAction)findDirection:(id)sender {
-    [self clearPolyline];
+    
+    if ([self.startTextfield.text isEqualToString:self.endTextField.text] || !self.startTextfield.text || !self.endTextField.text) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"You can't do this" message:@"😨" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+    }
+    [self clearRoute:nil];
     MapRoute* mapRoute = [[MapRoute alloc] initWithFilename:@"route_points"];
     MKPolyline *route = [mapRoute routeStart:self.startTextfield.text toFinish:self.endTextField.text];
     [self.mapView addOverlay:route];
-    self.picker.hidden = YES;
 }
 
--(void)clearPolyline{
-    for (MapOverlay *overlay in self.mapView.overlays) {
-        if ([overlay isKindOfClass:[MKPolyline class]]) {
-            [self.mapView removeOverlay:overlay];
-        }
-    }
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-
-    if (annotation == mapView.userLocation) return nil;
-    BuildingAnnotationView *annotationView = [[BuildingAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"building"];
-    annotationView.canShowCallout = YES;
-    return annotationView;
-    return nil;
-}
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
+    
     // Initialize Data
     _pickerData = [[NSMutableArray alloc] initWithObjects:@"MSB",@"Koch",@"Library",@"Hess",@"Arms",@"Dining Hall",@"Athletic Center",@"Athletic Fields",@"Language Building", nil];
     
@@ -271,8 +268,8 @@
     self.startTextfield.delegate = self;
     self.endTextField.delegate = self;
     
-    CLLocationDegrees lat = 42.54444;
-    CLLocationDegrees lon =  -72.60611;
+    CLLocationDegrees lat = 42.547101;
+    CLLocationDegrees lon =  -72.606792;
     CLLocationCoordinate2D c = CLLocationCoordinate2DMake(lat, lon);
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(c, 500, 500);
     
@@ -288,18 +285,13 @@
     self.locationManager.delegate = self;
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-        [self.locationManager requestWhenInUseAuthorization];
-    
+    [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
     
     self.buildings = [NSMutableArray array];
     
     [self segmentSelected:nil];
     [super viewDidLoad];
- 
-
 }
 
 -(void) viewDidAppear:(BOOL)animated{
@@ -310,7 +302,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end
